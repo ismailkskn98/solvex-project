@@ -30,7 +30,7 @@ export default function Navbar() {
           {pathname === item.href && (
             <motion.div
               layoutId="active"
-              className={classNames("absolute inset-x-0 -bottom-5 -z-10 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent drop-shadow-[0_-6px_6px_white]")}
+              className={classNames("absolute inset-x-0 -bottom-5 -z-10 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent drop-shadow-[0_-5px_5px_white]")}
               transition={{
                 type: "spring",
                 stiffness: 380,
