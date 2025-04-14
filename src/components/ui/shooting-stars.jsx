@@ -19,7 +19,7 @@ const getRandomStartPoint = () => {
       return { x: 0, y: 0, angle: 45 };
   }
 };
-export const ShootingStars = ({ minSpeed = 10, maxSpeed = 30, minDelay = 1200, maxDelay = 4200, starColor = "#9E00FF", trailColor = "#2EB9DF", starWidth = 10, starHeight = 1, className }) => {
+export const ShootingStars = ({ minSpeed = 10, maxSpeed = 20, minDelay = 500, maxDelay = 750, starColor = "#1778f2", trailColor = "#1778f2", starWidth = 10, starHeight = 2, className }) => {
   const [star, setStar] = useState(null);
   const svgRef = useRef(null);
 

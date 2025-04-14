@@ -13,7 +13,7 @@
 }
 
 .gridContainer > .fluid {
-  grid-column-start: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 @theme {
@@ -24,6 +24,7 @@
   --color-royal-purple: #43256e;
   --color-pure-white: #ffffff;
   --color-dark-black: #08070c;
+  --color-logo: #1778f2;
 
   /* fonts */
   --font-inter: var(--font-inter), "sans-serif";
@@ -49,6 +50,18 @@
   }
   .icon-hexagon {
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  }
+  .world-rotate {
+    animation: worldRotate 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes worldRotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
   }
 }
 

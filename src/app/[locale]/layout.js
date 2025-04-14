@@ -58,7 +58,7 @@ export default async function LocaleLayout({ params, children }) {
   }
   return (
     <html lang={locale}>
-      <body className={`${interTight.variable} font-inter antialiased gridContainer fluid bg-dark-black`}>
+      <body className={`${interTight.variable} font-inter antialiased gridContainer fluid overflow-x-hidden bg-dark-black`}>
         <NextIntlClientProvider>
           <Header />
           {children}
