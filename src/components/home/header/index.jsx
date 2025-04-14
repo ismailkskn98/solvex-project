@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import Image from "next/image";
 import LanguageChange from "./LanguageChange";
 import { Link } from "@/i18n/navigation";
+import { SlEnergy } from "react-icons/sl";
 
 export default function Header() {
   return (
@@ -12,11 +13,12 @@ export default function Header() {
         <span className="font-black text-white text-[min(10vw,30px)]">Solvex</span>
       </Link>
       <Navbar />
-      <article>
-        <button className="flex items-center gap-3 rounded-full bg-pure-white font-medium capitalize">
-          A<span>Hemen Satın Al</span>
-        </button>
+      <article className="flex items-center justify-center gap-2">
         <LanguageChange />
+        <button className="px-5 py-3 rounded-full bg-white cursor-pointer text-black/80 hover:bg-white/70 transition flex items-center gap-1 font-medium">
+          <SlEnergy className="text-lg" />
+          <span>Satın Al</span>
+        </button>
       </article>
     </header>
   );
