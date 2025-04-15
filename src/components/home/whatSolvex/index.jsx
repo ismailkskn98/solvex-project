@@ -15,8 +15,8 @@ export default function WhatSolvex() {
         <Globe className="drop-shadow-[drop-shadow(0_0_7px_#bf6fad)]" />
       </section>
       <section className="flex-1 flex flex-col items-start justify-center gap-2 backdrop-blur-[.5px]">
-        <h2 className="text-white font-bold text-[min(3.6vw,50px)]">Solvex Network Nedir?</h2>
-        <p className="text-white/80 font-base text-[min(1.3vw,18px)] leading-9">
+        <h2 className="text-transparent bg-gradient-to-t from-black/10 to-white bg-clip-text font-bold text-[min(3.6vw,50px)]">Solvex Network Nedir?</h2>
+        <p className="text-white/80 font-base text-[min(1.3vw,15px)] leading-9">
           Solvex Network, BNB Chain Ecosystem üzerinde yer alan, merkeziyetsiz ve topluluk odaklı bir kripto para projesidir. İlk aşamalarında merkeziyetsiz finans (DeFi) çözümlerine odaklanan proje, daha sonra
           topluluk tarafından yönetilen bir modele geçiş yaparak, dolaşımdaki token miktarının yakılması ve likiditenin kilitlenmesi gibi önlemlerle uzun vadeli istikrar sağlamayı amaçlamıştır. Bu yapı, projenin
           güvenilirliğini artırarak yatırımcıların ve kullanıcıların güvenini kazanmayı hedeflemektedir.

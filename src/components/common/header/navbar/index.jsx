@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import classNames from "classnames";
 import * as motion from "motion/react-client";

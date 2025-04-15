@@ -3,7 +3,10 @@ import localFont from "next/font/local";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/home/header";
+import Header from "@/components/common/header";
+
+import { ReactLenis } from "@/utils/lenis";
+import Footer from "@/components/common/footer";
 
 const interTight = localFont({
   src: [
@@ -58,12 +61,15 @@ export default async function LocaleLayout({ params, children }) {
   }
   return (
     <html lang={locale}>
-      <body className={`${interTight.variable} font-inter antialiased gridContainer fluid overflow-x-hidden bg-dark-black`}>
-        <NextIntlClientProvider>
-          <Header />
-          {children}
-        </NextIntlClientProvider>
-      </body>
+      <ReactLenis root>
+        <body className={`${interTight.variable} font-inter antialiased gridContainer fluid overflow-x-hidden bg-dark-black`}>
+          <NextIntlClientProvider>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </body>
+      </ReactLenis>
     </html>
   );
 }

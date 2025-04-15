@@ -19,6 +19,7 @@
     "cobe": "^0.6.3",
     "framer-motion": "^12.7.1",
     "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "lucide-react": "^0.488.0",
     "motion": "^12.7.1",
     "next": "15.3.0",

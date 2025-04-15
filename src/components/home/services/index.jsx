@@ -20,9 +20,9 @@ export default function Services() {
         <Threads amplitude={1} distance={0} enableMouseInteraction={true} />
       </div>
       <section className="flex flex-col items-center justify-center gap-16">
-        <article className="w-full flex-col items-center justify-center text-center text-white">
+        <article className="w-full flex-col items-center justify-center text-center text-transparent bg-gradient-to-t from-black to-white bg-clip-text">
           <h2 className="font-semibold text-[min(3.6vw,50px)]">Servisler</h2>
-          <p className="text-white/80 font-base text-[min(1.3vw,18px)] leading-9">
+          <p className="font-base text-[min(1.3vw,18px)] leading-9 text-white/80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit cupiditate, corporis reiciendis ea quod repellendus ullam repudiandae iusto magni.
           </p>
         </article>
