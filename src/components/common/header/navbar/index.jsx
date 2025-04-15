@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link
           key={index}
           href={item.href}
-          className={classNames("relative font-medium", {
+          className={classNames("relative font-medium hover:text-white/80", {
             "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
               pathname === item.href,
           })}
