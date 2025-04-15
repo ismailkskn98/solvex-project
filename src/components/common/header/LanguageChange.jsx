@@ -1,6 +1,12 @@
 "use client";
 import React, { useTransition } from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -16,17 +22,38 @@ export default function LanguageChange() {
   };
 
   return (
-    <Select defaultValue={locale} onValueChange={(lang) => handleLocaleChange(lang)}>
-      <SelectTrigger className="text-white border-none w-fit cursor-pointer px-2">
+    <Select
+      defaultValue={locale}
+      onValueChange={(lang) => handleLocaleChange(lang)}
+    >
+      <SelectTrigger className="w-fit cursor-pointer border-none px-2 text-white">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="tr" className="flex items-center justify-center gap-1 cursor-pointer">
-          <Image src="https://flagcdn.com/24x18/tr.png" alt="Türkçe" width={24} height={18} className="h-4 w-5 object-cover lg:h-[18px] lg:w-6" />
+        <SelectItem
+          value="tr"
+          className="flex cursor-pointer items-center justify-center gap-1"
+        >
+          <Image
+            src="https://flagcdn.com/24x18/tr.png"
+            alt="Türkçe"
+            width={24}
+            height={18}
+            className="h-4 w-5 object-cover lg:h-[18px] lg:w-6"
+          />
           <span>Türkçe</span>
         </SelectItem>
-        <SelectItem value="en" className="flex items-center justify-center gap-1 cursor-pointer">
-          <Image src="https://flagcdn.com/24x18/us.png" alt="English" width={24} height={18} className="h-4 w-5 object-cover lg:h-[18px] lg:w-6" />
+        <SelectItem
+          value="en"
+          className="flex cursor-pointer items-center justify-center gap-1"
+        >
+          <Image
+            src="https://flagcdn.com/24x18/us.png"
+            alt="English"
+            width={24}
+            height={18}
+            className="h-4 w-5 object-cover lg:h-[18px] lg:w-6"
+          />
           <span>English</span>
         </SelectItem>
       </SelectContent>

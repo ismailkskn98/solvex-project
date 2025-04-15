@@ -95,9 +95,16 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   }, [rs, config]);
 
   return (
-    <div className={cn("absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto aspect-[1/1] w-full max-w-[500px] 2xl:max-w-[600px]", className)}>
+    <div
+      className={cn(
+        "absolute inset-x-0 top-1/2 mx-auto aspect-[1/1] w-full max-w-[500px] -translate-y-1/2 2xl:max-w-[600px]",
+        className,
+      )}
+    >
       <canvas
-        className={cn("size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]")}
+        className={cn(
+          "size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]",
+        )}
         ref={canvasRef}
         onPointerDown={(e) => {
           pointerInteracting.current = e.clientX;
@@ -106,7 +113,9 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
         onPointerUp={() => updatePointerInteraction(null)}
         onPointerOut={() => updatePointerInteraction(null)}
         onMouseMove={(e) => updateMovement(e.clientX)}
-        onTouchMove={(e) => e.touches[0] && updateMovement(e.touches[0].clientX)}
+        onTouchMove={(e) =>
+          e.touches[0] && updateMovement(e.touches[0].clientX)
+        }
       />
     </div>
   );
