@@ -5,8 +5,10 @@ import React from "react";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { MdToken } from "react-icons/md";
 import { MdHealthAndSafety } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 export default function WhatSolvex() {
+  const t = useTranslations("HomePage");
   return (
     <main className="relative mt-32 flex w-full flex-col items-center justify-center rounded-lg border-2 border-white/15 bg-white/5 px-16 py-14 min-[900px]:flex-row min-[900px]:justify-between">
       <DotBackground />
@@ -16,17 +18,10 @@ export default function WhatSolvex() {
       </section>
       <section className="flex flex-1 flex-col items-start justify-center gap-2 backdrop-blur-[.5px]">
         <h2 className="bg-gradient-to-t from-black/10 to-white bg-clip-text text-[min(3.6vw,50px)] font-bold text-transparent">
-          Solvex Network Nedir?
+          {t("whySolvex")}
         </h2>
         <p className="font-base text-[min(1.3vw,15px)] leading-9 text-white/80">
-          Solvex Network, BNB Chain Ecosystem üzerinde yer alan, merkeziyetsiz
-          ve topluluk odaklı bir kripto para projesidir. İlk aşamalarında
-          merkeziyetsiz finans (DeFi) çözümlerine odaklanan proje, daha sonra
-          topluluk tarafından yönetilen bir modele geçiş yaparak, dolaşımdaki
-          token miktarının yakılması ve likiditenin kilitlenmesi gibi önlemlerle
-          uzun vadeli istikrar sağlamayı amaçlamıştır. Bu yapı, projenin
-          güvenilirliğini artırarak yatırımcıların ve kullanıcıların güvenini
-          kazanmayı hedeflemektedir.
+          {t("whySolvexReply")}
         </p>
         <article className="mt-3 flex items-center gap-5">
           <div className="bg-purple-bright/5 rounded-lg border border-white/15 p-3 text-2xl text-white transition hover:bg-white/25">

@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-// import Link from "next/link";
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 const socialItems = [
   { href: "https://t.me/SolvexNetworkOfficial", icon: FaTelegramPlane },
@@ -13,16 +13,17 @@ const socialItems = [
   },
 ];
 
-const navItem = [
-  { href: "/", title: "Anasayfa" },
-  { href: "/about", title: "Hakkımızda" },
-  { href: "/road-map", title: "Yol Haritası" },
-  { href: "/team", title: "Takım" },
-  { href: "/sss", title: "SSS" },
-  { href: "/contact", title: "İletisim" },
-];
-
 export default function Footer() {
+  const t = useTranslations("Navbar");
+  const navItem = [
+    { href: "/", title: t("home") },
+    { href: "/about", title: t("about") },
+    { href: "/road-map", title: t("roadMap") },
+    { href: "/team", title: t("team") },
+    { href: "/sss", title: t("faq") },
+    { href: "/contact", title: t("contact") },
+  ];
+
   return (
     <footer className="fluid gridContainer relative overflow-hidden">
       <Image

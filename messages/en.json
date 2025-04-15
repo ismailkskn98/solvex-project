@@ -1,6 +1,36 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "heroContent": "We provide innovative products that eliminate the complexity in blockchain technology, allowing society to benefit without requiring technical knowledge.",
+    "heroSubContent": "Solvex Network offers the transparency and security benefits of blockchain technology for the benefit of users.",
+    "whySolvex": "What is Solvex Network?",
+    "whySolvexReply": "Solvex Network is a decentralized and community-driven cryptocurrency project built on the BNB Chain Ecosystem. Initially focusing on decentralized finance (DeFi) solutions, the project later transitioned to a community-governed model, aiming to ensure long-term stability through measures such as token burns and liquidity locking. This structure aims to increase the project's credibility and earn the trust of investors and users.",
+    "services": "Services",
+    "servicesSubtitle": "Thanks to these technical features, Solvex offers not just a token but a comprehensive ecosystem that protects user data and transactions.",
+    "servicesItem": {
+      "system": {
+        "title": "Corporate Verification System",
+        "content": "We provide a profile verification system through verified institutions in the connected business and career network."
+      },
+      "safe": {
+        "title": "Secure and User-Friendly Wallet",
+        "content": "A multi-network supported, user-friendly wallet that requires zero technical knowledge."
+      },
+      "platform": {
+        "title": "On/Off-Ramp Platform",
+        "content": "An integrated financial system where you can convert Solvex tokens to TRY and TRY to Solvex tokens."
+      },
+      "blockchain": {
+        "title": "Blockchain-Based Smart Contract System",
+        "content": "A Blockchain-based payment and smart contract infrastructure for freelance work in the connected business and career network."
+      }
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "roadMap": "Roadmap",
+    "team": "Team",
+    "faq": "FAQ",
+    "contact": "Contact"
   }
 }

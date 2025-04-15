@@ -3,17 +3,19 @@ import React from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import classNames from "classnames";
 import * as motion from "motion/react-client";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const t = useTranslations("Navbar");
 
   const navItem = [
-    { href: "/", title: "Anasayfa" },
-    { href: "/about", title: "Hakkımızda" },
-    { href: "/road-map", title: "Yol Haritası" },
-    { href: "/team", title: "Takım" },
-    { href: "/sss", title: "SSS" },
-    { href: "/contact", title: "İletisim" },
+    { href: "/", title: t("home") },
+    { href: "/about", title: t("about") },
+    { href: "/road-map", title: t("roadMap") },
+    { href: "/team", title: t("team") },
+    { href: "/sss", title: t("faq") },
+    { href: "/contact", title: t("contact") },
   ];
 
   return (
@@ -22,10 +24,13 @@ export default function Navbar() {
         <Link
           key={index}
           href={item.href}
-          className={classNames("relative font-medium hover:text-white/80", {
-            "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
-              pathname === item.href,
-          })}
+          className={classNames(
+            "relative font-medium capitalize hover:text-white/80",
+            {
+              "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
+                pathname === item.href,
+            },
+          )}
         >
           {item.title}
           {pathname === item.href && (
