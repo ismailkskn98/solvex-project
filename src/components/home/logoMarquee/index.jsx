@@ -19,10 +19,10 @@ const companies = [
 
 export default function LogoMarquee() {
   return (
-    <Marquee className="max-w-full [--duration:40s] mt-2">
+    <Marquee className="max-w-full [--duration:40s] mt-6">
       {companies.map((company, id) => (
         <Link href={company.href} target="_blank" key={id}>
-          <Image width={112} height={80} src={company.image} className="h-[70px] w-[90px] grayscale-[95%] hover:grayscale-0 transition-all duration-200" alt={company.name} />
+          <Image width={112} height={80} src={company.image} alt={company.name || ""} className="h-[70px] w-[90px] grayscale-[95%] hover:grayscale-0 transition-all duration-200" />
         </Link>
       ))}
     </Marquee>
