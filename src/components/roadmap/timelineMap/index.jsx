@@ -1,7 +1,7 @@
+import { Spotlight } from "@/components/ui/spotlight";
 import { Timeline } from "@/components/ui/timeline";
 import { useTranslations } from "next-intl";
 import React from "react";
-import SplineDesing from "../SplineDesing";
 
 export default function TimeLineMap() {
   const t = useTranslations("RoadMapPage");
@@ -88,8 +88,11 @@ export default function TimeLineMap() {
 
   return (
     <main className="relative w-full">
-      <SplineDesing />
       <article className="mx-auto mt-20 w-full max-w-[1280px]">
+        <Spotlight
+          className="-top-40 left-0 md:-top-20 md:left-96"
+          fill="white"
+        />
         <h1 className="bg-gradient-to-t from-black to-white bg-clip-text text-[clamp(40px,6vw,80px)] font-semibold text-transparent">
           Yol haritası
         </h1>

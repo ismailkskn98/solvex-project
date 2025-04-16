@@ -11,7 +11,7 @@ export default function SplineDesing() {
   return (
     <Spline
       scene="https://prod.spline.design/KjsOdZmZbQxRL1-z/scene.splinecode"
-      className="before:bg-dark-black absolute top-0 right-0 z-40 !h-[35%] !w-[45%] before:absolute before:right-0 before:bottom-0 before:h-[70px] before:w-[180px]"
+      className="before:bg-dark-black absolute top-0 right-0 z-40 before:absolute before:right-0 before:bottom-0 before:h-[70px] before:w-[180px]"
     />
   );
 }
