@@ -80,9 +80,12 @@ export default async function LocaleLayout({ params, children }) {
     <html lang={locale}>
       <ReactLenis root>
         <body
-          className={`${interTight.variable} font-inter gridContainer fluid bg-dark-black overflow-x-hidden antialiased transition-transform duration-300`}
+          className={`${interTight.variable} font-inter bg-dark-black overflow-x-hidden antialiased transition-transform duration-300`}
         >
-          <main id="layout-main" className="transition-transform duration-300">
+          <main
+            id="layout-main"
+            className="fluid gridContainer w-full transition-transform duration-300"
+          >
             <NextIntlClientProvider>
               <Header />
               {children}

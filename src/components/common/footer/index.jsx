@@ -35,8 +35,8 @@ export default function Footer() {
       />
       <div className="fluid absolute inset-0 -z-10 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
       <main className="flex w-full flex-col">
-        <section className="mx-auto flex w-full max-w-9/12 items-start justify-between gap-28 py-16">
-          <article className="flex flex-col gap-5">
+        <section className="mx-auto grid w-full max-w-full place-content-start justify-stretch gap-12 py-16 sm:grid-cols-2 md:grid-cols-4 md:place-items-center xl:max-w-11/12 xl:gap-12 2xl:max-w-9/12 2xl:gap-16">
+          <article className="col-span-2 flex flex-col gap-5 md:col-span-1">
             <div className="flex items-center gap-2">
               <Image
                 src={"/images/common/logo.png"}
@@ -95,7 +95,7 @@ export default function Footer() {
               ))}
             </div>
           </article>
-          <article className="flex max-w-sm flex-col items-start gap-5">
+          <article className="col-span-2 flex max-w-sm flex-col items-start gap-5 md:col-span-1">
             <h3 className="font-medium text-nowrap text-white">
               {t("footer.contactTitle")}
             </h3>

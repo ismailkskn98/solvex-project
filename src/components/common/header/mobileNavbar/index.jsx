@@ -74,8 +74,8 @@ export default function MobileNavbar() {
           )}
         />
       </DrawerTrigger>
-      <DrawerContent>
-        <DrawerHeader className="flex-1 p-0">
+      <DrawerContent className="from-dark-black !border-none bg-gradient-to-br from-60% to-[#07264b]">
+        <DrawerHeader className="relative w-full flex-1 p-0">
           <DrawerTitle className={"px-2 pt-6"}>
             <Link
               href="/"
@@ -86,7 +86,7 @@ export default function MobileNavbar() {
                     document.querySelector("#layout-main").style.transform =
                       "translate3d(0,0,0)";
                   }
-                }, 500);
+                }, 300);
               }}
               className="flex items-center gap-2"
             >
@@ -97,7 +97,7 @@ export default function MobileNavbar() {
                 alt=""
                 className="h-[min(10vw,45px)] w-[min(10vw,45px)]"
               />
-              <span className="text-[min(10vw,22px)] font-black text-black">
+              <span className="text-[min(10vw,22px)] font-black text-white">
                 Solvex
               </span>
             </Link>
@@ -115,13 +115,13 @@ export default function MobileNavbar() {
                         document.querySelector("#layout-main").style.transform =
                           "translate3d(0,0,0)";
                       }
-                    }, 500);
+                    }, 300);
                   }}
                   className={classNames(
                     "relative flex w-full items-center gap-3 px-4 py-4 capitalize transition-all duration-200",
                     {
                       "text-white grayscale-0": pathname === href,
-                      "text-black grayscale-100": pathname !== href,
+                      "text-white grayscale-100": pathname !== href,
                     },
                   )}
                 >
@@ -136,7 +136,7 @@ export default function MobileNavbar() {
                         damping: 30,
                       }}
                       className={classNames(
-                        "from-logo absolute inset-0 -z-10 h-full w-full border-l-8 border-[#0e51a5] bg-gradient-to-r from-40% to-transparent",
+                        "from-logo absolute inset-0 -z-10 h-full w-full border-l-4 border-[#0e4181] bg-gradient-to-r to-transparent",
                       )}
                     ></motion.span>
                   )}
@@ -145,7 +145,7 @@ export default function MobileNavbar() {
             </main>
           </section>
         </DrawerHeader>
-        <DrawerFooter className="mb-3">
+        <DrawerFooter className="mb-3 font-medium text-white">
           <DrawerClose>Kapat</DrawerClose>
         </DrawerFooter>
       </DrawerContent>
