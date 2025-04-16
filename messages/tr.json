@@ -23,14 +23,24 @@
         "title": "Blockchain Tabanlı Akıllı Sözleşme Sistemi",
         "content": "Bağlantılı iş ve kariyer ağında serbest işler için Blockchain tabanlı ödeme ve akıllı sözleşme altyapısı."
       }
+    },
+    "coldWalletSubtitle": "Kripto varlıklarınızı maksimum güvenlikle saklamanın en etkili yolu: çevrimdışı, saldırılara kapalı ve tamamen sizin kontrolünüzde.",
+    "navbar": {
+      "home": "Anasayfa",
+      "about": "Hakkımızda",
+      "roadMap": "Yol Haritası",
+      "team": "Takım",
+      "faq": "SSS",
+      "contact": "İletişim"
+    },
+    "footer": {
+      "logoSubtitle": "Solvex Network, blockchain teknolojisini herkes için erişilebilir kılmayı hedefleyen, topluluk odaklı bir kripto para projesidir. Güvenli, şeffaf ve merkeziyetsiz çözümler sunar.",
+      "community": "Bize katıl, topluluğumuzun bir parçası ol!",
+      "quickAccess": "Hızlı Erişim",
+      "siteMap": "Site Haritası",
+      "contactTitle": "Bize Ulaşın",
+      "contactSubtitle": "Ekibimiz, her zaman sorularınızı yanıtlamaya hazır. Bizimle iletişime geçin!",
+      "copyright": "Solvex Network © Tüm Hakları Saklıdır."
     }
-  },
-  "Navbar": {
-    "home": "Anasayfa",
-    "about": "Hakkımızda",
-    "roadMap": "Yol Haritası",
-    "team": "Takım",
-    "faq": "SSS",
-    "contact": "İletişim"
   }
 }

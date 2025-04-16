@@ -97,7 +97,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   return (
     <div
       className={cn(
-        "absolute inset-x-0 top-1/2 mx-auto aspect-[1/1] w-full max-w-[500px] -translate-y-1/2 2xl:max-w-[600px]",
+        "absolute inset-x-0 top-1/2 mx-auto aspect-[1/1] w-[400px] -translate-y-1/2 xl:w-[500px] 2xl:w-[600px]",
         className,
       )}
     >

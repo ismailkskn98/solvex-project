@@ -34,20 +34,20 @@ export default function Services() {
   ];
 
   return (
-    <main className="fluid gridContainer overf relative mt-32 w-full">
-      <div className="fluid absolute inset-x-0 top-0 -z-10 hidden h-full w-full overflow-hidden min-[1350px]:top-[30rem] sm:block">
+    <main className="fluid gridContainer overf relative mt-20 w-full lg:mt-32">
+      <div className="fluid absolute inset-x-0 top-0 -z-10 hidden h-full w-full overflow-hidden md:top-[min(30vw,30rem)] md:block">
         <Threads amplitude={1} distance={0} enableMouseInteraction={true} />
       </div>
-      <section className="flex flex-col items-center justify-center gap-16">
+      <section className="fluid flex flex-col items-center justify-center gap-9 sm:gap-12 md:gap-16">
         <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">
-          <h2 className="text-[min(3.6vw,50px)] font-semibold">
+          <h2 className="text-[min(7vw,50px)] font-semibold capitalize">
             {t("services")}
           </h2>
-          <p className="font-base text-[min(1.3vw,18px)] leading-9 text-white/80">
+          <p className="font-base text-[clamp(14px,1.5vw,18px)] leading-7 text-white/70 sm:leading-8 lg:leading-9">
             {t("servicesSubtitle")}
           </p>
         </article>
-        <main className="mx-auto grid grid-cols-1 justify-items-stretch gap-8 min-[1350px]:!grid-cols-4 sm:grid-cols-2">
+        <main className="mx-auto grid grid-cols-1 justify-items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:gap-8">
           {servicesItem.map((item, index) => (
             <ServiceCard
               key={index}

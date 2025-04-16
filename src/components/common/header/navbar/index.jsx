@@ -7,15 +7,15 @@ import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const t = useTranslations("Navbar");
+  const t = useTranslations("HomePage");
 
   const navItem = [
-    { href: "/", title: t("home") },
-    { href: "/about", title: t("about") },
-    { href: "/road-map", title: t("roadMap") },
-    { href: "/team", title: t("team") },
-    { href: "/sss", title: t("faq") },
-    { href: "/contact", title: t("contact") },
+    { href: "/", title: t("navbar.home") },
+    { href: "/about", title: t("navbar.about") },
+    { href: "/road-map", title: t("navbar.roadMap") },
+    { href: "/team", title: t("navbar.team") },
+    { href: "/sss", title: t("navbar.faq") },
+    { href: "/contact", title: t("navbar.contact") },
   ];
 
   return (

@@ -23,14 +23,24 @@
         "title": "Blockchain-Based Smart Contract System",
         "content": "A Blockchain-based payment and smart contract infrastructure for freelance work in the connected business and career network."
       }
+    },
+    "coldWalletSubtitle": "The most effective way to store your crypto assets with maximum security: offline, immune to attacks, and fully under your control.",
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "roadMap": "Roadmap",
+      "team": "Team",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "footer": {
+      "logoSubtitle": "Solvex Network is a community-driven cryptocurrency project aiming to make blockchain technology accessible to everyone. It offers secure, transparent, and decentralized solutions.",
+      "community": "Join us and be part of our community!",
+      "quickAccess": "Quick Access",
+      "siteMap": "Site Map",
+      "contactTitle": "Contact Us",
+      "contactSubtitle": "Our team is always ready to answer your questions. Get in touch with us!",
+      "copyright": "Solvex Network © All Rights Reserved."
     }
-  },
-  "Navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "roadMap": "Roadmap",
-    "team": "Team",
-    "faq": "FAQ",
-    "contact": "Contact"
   }
 }
