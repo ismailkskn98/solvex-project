@@ -42,5 +42,49 @@
       "contactSubtitle": "Our team is always ready to answer your questions. Get in touch with us!",
       "copyright": "Solvex Network © All Rights Reserved."
     }
+  },
+  "RoadMapPage": {
+    "q1_2025": {
+      "title": "Q1 2025",
+      "content": {
+        "1": "Development of core security infrastructure and basic wallet functionality",
+        "2": "Research and planning for multi-chain support integration"
+      }
+    },
+    "q2_2025": {
+      "title": "Q2 2025",
+      "content": {
+        "1": "Launch of alpha version with basic token management and security features",
+        "2": "Implementation of support for major blockchain networks"
+      }
+    },
+    "q3_2025": {
+      "title": "Q3 2025",
+      "content": {
+        "1": "Comprehensive security audits and beta testing with expanded features",
+        "2": "Market research and regulatory compliance analysis for fiat integration"
+      }
+    },
+    "q4_2025": {
+      "title": "Q4 2025",
+      "content": {
+        "1": "Full release of the wallet with complete feature set and security measures",
+        "2": "Beginning of payment infrastructure development and banking partnerships"
+      }
+    },
+    "q1_2026": {
+      "title": "Q1 2026",
+      "content": {
+        "1": "Initial testing of fiat-to-crypto conversion system with selected users",
+        "2": "Design and architecture planning for the business and career network"
+      }
+    },
+    "q2_2026": {
+      "title": "Q2 2026",
+      "content": {
+        "1": "Official launch of the fiat gateway with full banking integration",
+        "2": "Start of development for the business and career network platform"
+      }
+    }
   }
 }
