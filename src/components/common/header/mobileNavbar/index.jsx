@@ -24,7 +24,7 @@ import { motion } from "motion/react";
 import { RiContactsBookFill } from "react-icons/ri";
 
 export default function MobileNavbar() {
-  const [openNav, setOpenNav] = useState(true);
+  const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
   const t = useTranslations("HomePage");
 
@@ -40,7 +40,7 @@ export default function MobileNavbar() {
   return (
     <Drawer
       direction="right"
-      defaultOpen={true}
+      open={openNav}
       onOpenChange={(value) => {
         setOpenNav(value);
         if (document.querySelector("#layout-main")) {
@@ -76,8 +76,20 @@ export default function MobileNavbar() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="flex-1 p-0">
-          <DrawerTitle>
-            <Link href="/" className="flex items-center gap-2">
+          <DrawerTitle className={"px-2 pt-6"}>
+            <Link
+              href="/"
+              onClick={() => {
+                setTimeout(() => {
+                  setOpenNav((prev) => !prev);
+                  if (document.querySelector("#layout-main")) {
+                    document.querySelector("#layout-main").style.transform =
+                      "translate3d(0,0,0)";
+                  }
+                }, 500);
+              }}
+              className="flex items-center gap-2"
+            >
               <Image
                 src={"/images/common/logo.png"}
                 width={60}
@@ -96,6 +108,15 @@ export default function MobileNavbar() {
                 <Link
                   href={href}
                   key={index}
+                  onClick={() => {
+                    setTimeout(() => {
+                      setOpenNav((prev) => !prev);
+                      if (document.querySelector("#layout-main")) {
+                        document.querySelector("#layout-main").style.transform =
+                          "translate3d(0,0,0)";
+                      }
+                    }, 500);
+                  }}
                   className={classNames(
                     "relative flex w-full items-center gap-3 px-4 py-4 capitalize transition-all duration-200",
                     {
