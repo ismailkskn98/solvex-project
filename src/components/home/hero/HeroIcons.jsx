@@ -29,16 +29,16 @@ export default function HeroIcons() {
         </Parallax>
 
         <Parallax speed={-10} className="absolute -top-24 left-0">
-          <article className="icon-hexagon absolute top-16 left-32 h-28 w-28 bg-white/10 p-1">
+          <article className="icon-hexagon absolute top-16 left-32 h-20 w-20 bg-white/10 p-1">
             <div className="icon-hexagon flex h-full w-full items-center justify-center bg-white/15">
-              <FaEthereum className="text-[min(10vw,60px)] text-white" />
+              <FaEthereum className="text-[min(8vw,35px)] text-white" />
             </div>
           </article>
-          <div className="absolute top-[4.9rem] -left-9 h-[100px] w-[200px]">
-            <span className="absolute top-[1.3rem] right-[1.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute top-[2.1rem] right-[1.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute top-[2.8rem] right-[1.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute top-[3.6rem] right-[1.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
+          <div className="absolute top-[4.3rem] -left-10 h-[100px] w-[200px]">
+            <span className="absolute top-[1.4rem] right-[1.4rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute top-[1.9rem] right-[1.4rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute top-[2.4rem] right-[1.4rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute top-[2.9rem] right-[1.4rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
             <Image
               src="/images/home/line-left-1.svg"
               alt=""
@@ -51,35 +51,35 @@ export default function HeroIcons() {
               alt=""
               width={200}
               height={100}
-              className="absolute top-3 left-0"
+              className="absolute top-2 left-0"
             />
             <Image
               src="/images/home/line-left-3.svg"
               alt=""
               width={200}
               height={100}
-              className="absolute top-6 left-0"
+              className="absolute top-4 left-0"
             />
             <Image
               src="/images/home/line-left-4.svg"
               alt=""
               width={200}
               height={100}
-              className="absolute top-9 left-0"
+              className="absolute top-6 left-0"
             />
           </div>
         </Parallax>
         <Parallax speed={-10} className="absolute right-0 -bottom-24">
-          <article className="icon-hexagon absolute right-32 bottom-16 h-28 w-28 bg-white/10 p-1">
+          <article className="icon-hexagon absolute right-32 bottom-16 h-20 w-20 bg-white/10 p-1">
             <div className="icon-hexagon flex h-full w-full items-center justify-center bg-white/15">
-              <BsCurrencyBitcoin className="text-[min(10vw,60px)] text-white" />
+              <BsCurrencyBitcoin className="text-[min(8vw,35px)] text-white" />
             </div>
           </article>
-          <div className="absolute -right-1 bottom-[2.8rem] h-[100px] w-[200px]">
-            <span className="absolute bottom-[4.1rem] left-[3.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute bottom-[3.3rem] left-[3.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute bottom-[4.9rem] left-[3.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
-            <span className="absolute bottom-[5.6rem] left-[3.4rem] h-[6px] w-[6px] rounded-[100%] bg-white"></span>
+          <div className="absolute -right-1 bottom-[2.2rem] h-[100px] w-[200px]">
+            <span className="absolute bottom-[5rem] left-[3.7rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute bottom-[4.5rem] left-[3.7rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute bottom-[4rem] left-[3.7rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
+            <span className="absolute bottom-[3.5rem] left-[3.7rem] h-[4px] w-[4px] rounded-[100%] bg-white"></span>
             <Image
               src="/images/home/line-right-1.svg"
               alt=""
@@ -92,21 +92,21 @@ export default function HeroIcons() {
               alt=""
               width={200}
               height={100}
-              className="absolute right-0 bottom-3"
+              className="absolute right-0 bottom-2"
             />
             <Image
               src="/images/home/line-right-3.svg"
               alt=""
               width={200}
               height={100}
-              className="absolute right-0 bottom-6"
+              className="absolute right-0 bottom-4"
             />
             <Image
               src="/images/home/line-right-1.svg"
               alt=""
               width={200}
               height={100}
-              className="absolute right-0 bottom-9"
+              className="absolute right-0 bottom-6"
             />
           </div>
         </Parallax>

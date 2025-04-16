@@ -19,25 +19,22 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between gap-9 rounded-4xl bg-white/5 px-9 py-5 text-white/50">
+    <nav className="flex items-center justify-between gap-9 rounded-4xl bg-white/5 px-8 py-4 text-white/50">
       {navItem.map((item, index) => (
         <Link
           key={index}
           href={item.href}
-          className={classNames(
-            "relative font-medium capitalize hover:text-white/80",
-            {
-              "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
-                pathname === item.href,
-            },
-          )}
+          className={classNames("relative capitalize hover:text-white/80", {
+            "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
+              pathname === item.href,
+          })}
         >
           {item.title}
           {pathname === item.href && (
             <motion.div
               layoutId="active"
               className={classNames(
-                "absolute inset-x-0 -bottom-5 -z-10 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent drop-shadow-[0_-5px_5px_white]",
+                "absolute inset-x-0 -bottom-4 -z-10 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent drop-shadow-[0_-5px_5px_white]",
               )}
               transition={{
                 type: "spring",

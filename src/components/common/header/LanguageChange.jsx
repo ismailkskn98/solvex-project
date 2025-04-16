@@ -26,7 +26,7 @@ export default function LanguageChange() {
       defaultValue={locale}
       onValueChange={(lang) => handleLocaleChange(lang)}
     >
-      <SelectTrigger className="w-fit cursor-pointer border-none px-2 text-white">
+      <SelectTrigger className="w-fit cursor-pointer border-none px-2 text-sm text-white">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
@@ -39,9 +39,9 @@ export default function LanguageChange() {
             alt="Türkçe"
             width={24}
             height={18}
-            className="h-4 w-5 object-cover lg:h-[18px] lg:w-6"
+            className="h-3 w-4 object-cover lg:h-[18px] lg:w-6"
           />
-          <span>Türkçe</span>
+          <span className="text-sm">Türkçe</span>
         </SelectItem>
         <SelectItem
           value="en"
@@ -52,9 +52,9 @@ export default function LanguageChange() {
             alt="English"
             width={24}
             height={18}
-            className="h-4 w-5 object-cover lg:h-[18px] lg:w-6"
+            className="h-3 w-4 object-cover lg:h-[18px] lg:w-6"
           />
-          <span>English</span>
+          <span className="text-sm">English</span>
         </SelectItem>
       </SelectContent>
     </Select>
