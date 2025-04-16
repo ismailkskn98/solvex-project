@@ -4,7 +4,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  srr: false,
+  ssr: false,
 });
 
 export default function SplineDesing() {
