@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 //TODO : Improve mobile version to display the image down the corresponding text instead of at the full bottom
@@ -20,7 +19,7 @@ export function TextComponent({
           : "scale-90 border-transparent opacity-50 saturate-0",
       )}
     >
-      <div className="flex w-full items-center gap-4 p-4">
+      <div className="flex w-full items-center gap-3 p-3">
         <p
           className={cn(
             "inline-flex size-8 shrink-0 items-center justify-center rounded-md border border-white/10 bg-white/10 text-white",
@@ -28,7 +27,7 @@ export function TextComponent({
         >
           {number}
         </p>
-        <h2 className={cn("text-left text-xl font-medium text-white")}>
+        <h2 className={cn("text-left text-base font-medium text-white")}>
           {title}
         </h2>
       </div>
@@ -38,7 +37,7 @@ export function TextComponent({
           isOpen ? "max-h-64" : "max-h-0",
         )}
       >
-        <p className="p-4 text-lg">{content}</p>
+        <p className="p-4 text-sm">{content}</p>
         <div className="w-full px-4 pb-4">
           <div className="relative h-1 w-full overflow-hidden rounded-full">
             <div

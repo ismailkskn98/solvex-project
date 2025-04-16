@@ -35,7 +35,7 @@ export default function Services() {
 
   return (
     <main className="fluid gridContainer overf relative mt-32 w-full">
-      <div className="fluid absolute inset-x-0 top-0 -z-10 h-full w-full overflow-hidden min-[1350px]:top-[30rem]">
+      <div className="fluid absolute inset-x-0 top-0 -z-10 hidden h-full w-full overflow-hidden min-[1350px]:top-[30rem] sm:block">
         <Threads amplitude={1} distance={0} enableMouseInteraction={true} />
       </div>
       <section className="flex flex-col items-center justify-center gap-16">

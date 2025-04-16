@@ -27,12 +27,12 @@ const data = [
       "Soğuk cüzdanlar, yüksek güvenlik sağlarken, çevrimdışı ortamda tutulduğundan fiziksel hasarlara veya kayıplara karşı da korur. Ayrıca, şifrelerin ve özel anahtarların kaybolması riskini en aza indirir.",
     srcImage: "/images/cold-wallet/cold-wallet-4.jpg",
   },
-  {
-    title: "Soğuk Cüzdanın Dezavantajları",
-    content:
-      "Soğuk cüzdanlar, internet bağlantısı olmadığı için işlem yapma süresi uzar. Ayrıca, donanım cüzdanı kaybolursa veya zarar görürse, geri almanın yolu yoktur. Yedekleme ve güvenli saklama çok önemlidir.",
-    srcImage: "/images/cold-wallet/cold-wallet-5.webp",
-  },
+  // {
+  //   title: "Soğuk Cüzdanın Dezavantajları",
+  //   content:
+  //     "Soğuk cüzdanlar, internet bağlantısı olmadığı için işlem yapma süresi uzar. Ayrıca, donanım cüzdanı kaybolursa veya zarar görürse, geri almanın yolu yoktur. Yedekleme ve güvenli saklama çok önemlidir.",
+  //   srcImage: "/images/cold-wallet/cold-wallet-5.webp",
+  // },
 ];
 
 export function ColdWallet() {

@@ -26,7 +26,7 @@ export default function LanguageChange() {
       defaultValue={locale}
       onValueChange={(lang) => handleLocaleChange(lang)}
     >
-      <SelectTrigger className="w-fit cursor-pointer border-none px-2 text-sm text-white">
+      <SelectTrigger className="w-fit cursor-pointer border-none px-0 text-sm text-white lg:px-1">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>

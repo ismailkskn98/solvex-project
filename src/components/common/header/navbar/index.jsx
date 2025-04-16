@@ -19,15 +19,18 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between gap-9 rounded-4xl bg-white/5 px-8 py-4 text-white/50">
+    <nav className="hidden items-center justify-between gap-5 rounded-4xl bg-white/5 px-8 py-4 text-white/50 lg:flex xl:gap-9">
       {navItem.map((item, index) => (
         <Link
           key={index}
           href={item.href}
-          className={classNames("relative capitalize hover:text-white/80", {
-            "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
-              pathname === item.href,
-          })}
+          className={classNames(
+            "relative text-[clamp(13px,1.2vw,16px)] text-nowrap capitalize hover:text-white/80",
+            {
+              "bg-gradient-to-l from-white/50 via-white to-white/50 bg-clip-text text-transparent":
+                pathname === item.href,
+            },
+          )}
         >
           {item.title}
           {pathname === item.href && (
