@@ -1,5 +1,5 @@
 import React from "react";
-import SplineDesing from "./SplineDesing";
+// import SplineDesing from "./SplineDesing";
 
 export default function AboutContent() {
   return (
@@ -15,7 +15,7 @@ export default function AboutContent() {
         </p>
       </section>
       <section className="relative h-full w-full flex-1">
-        <SplineDesing />
+        {/* <SplineDesing /> */}
       </section>
     </main>
   );
