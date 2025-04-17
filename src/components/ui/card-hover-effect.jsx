@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 
 import { useState } from "react";
+import { GridBackground } from "./gridBackground";
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
@@ -25,7 +26,7 @@ export const HoverEffect = ({ items, className }) => {
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 block h-full w-full rounded-3xl bg-neutral-200 dark:bg-slate-800/[0.8]"
+                className="absolute inset-0 block h-full w-full rounded-3xl bg-slate-800/[0.8]"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -53,10 +54,13 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-black p-4 group-hover:border-slate-700 dark:border-white/[0.2]",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent p-4 group-hover:border-slate-700 dark:border-white/[0.2]",
         className,
       )}
     >
+      <GridBackground />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-black"></div>
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>

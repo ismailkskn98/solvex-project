@@ -1,5 +1,10 @@
+import FaqContent from "@/components/faq/FaqContent";
 import React from "react";
 
 export default function Faq() {
-  return <div>About page</div>;
+  return (
+    <>
+      <FaqContent />
+    </>
+  );
 }

@@ -13,7 +13,7 @@ export default function Navbar() {
     { href: "/", title: t("navbar.home") },
     { href: "/about", title: t("navbar.about") },
     { href: "/road-map", title: t("navbar.roadMap") },
-    { href: "/sss", title: t("navbar.faq") },
+    { href: "/faq", title: t("navbar.faq") },
     { href: "/contact", title: t("navbar.contact") },
   ];
 
