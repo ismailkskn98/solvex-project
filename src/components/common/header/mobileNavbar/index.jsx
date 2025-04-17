@@ -32,7 +32,6 @@ export default function MobileNavbar() {
     { href: "/", title: t("navbar.home"), icon: HiHome },
     { href: "/about", title: t("navbar.about"), icon: BsBuildingsFill },
     { href: "/road-map", title: t("navbar.roadMap"), icon: FaSitemap },
-    { href: "/team", title: t("navbar.team"), icon: FaUsers },
     { href: "/sss", title: t("navbar.faq"), icon: FaQuestionCircle },
     { href: "/contact", title: t("navbar.contact"), icon: RiContactsBookFill },
   ];

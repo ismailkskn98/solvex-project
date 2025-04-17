@@ -29,7 +29,6 @@
       "home": "Anasayfa",
       "about": "Hakkımızda",
       "roadMap": "Yol Haritası",
-      "team": "Takım",
       "faq": "SSS",
       "contact": "İletişim"
     },
@@ -45,42 +44,42 @@
   },
   "RoadMapPage": {
     "q1_2025": {
-      "title": "2025 1. Çeyrek",
+      "title": "2025 1/4",
       "content": {
         "1": "Temel güvenlik altyapısının ve temel cüzdan işlevlerinin geliştirilmesi",
         "2": "Çoklu zincir desteği entegrasyonu için araştırma ve planlama"
       }
     },
     "q2_2025": {
-      "title": "2025 2. Çeyrek",
+      "title": "2025 2/4",
       "content": {
         "1": "Temel token yönetimi ve güvenlik özelliklerine sahip alpha sürümünün başlatılması",
         "2": "Önde gelen blokzincir ağları için destek entegrasyonu"
       }
     },
     "q3_2025": {
-      "title": "2025 3. Çeyrek",
+      "title": "2025 3/4",
       "content": {
         "1": "Genişletilmiş özelliklerle kapsamlı güvenlik denetimleri ve beta testleri",
         "2": "Fiat entegrasyonu için piyasa araştırması ve düzenleyici uygunluk analizi"
       }
     },
     "q4_2025": {
-      "title": "2025 4. Çeyrek",
+      "title": "2025 4/4",
       "content": {
         "1": "Tüm özellikler ve güvenlik önlemleriyle cüzdanın tam sürümünün yayınlanması",
         "2": "Ödeme altyapısının geliştirilmesi ve banka ortaklıklarının başlatılması"
       }
     },
     "q1_2026": {
-      "title": "2026 1. Çeyrek",
+      "title": "2026 1/4",
       "content": {
         "1": "Seçilen kullanıcılarla fiat'tan kriptoya dönüşüm sisteminin ilk testleri",
         "2": "İş ve kariyer ağı için tasarım ve mimari planlama"
       }
     },
     "q2_2026": {
-      "title": "2026 2. Çeyrek",
+      "title": "2026 2/4",
       "content": {
         "1": "Tam bankacılık entegrasyonuyla fiat geçidinin resmi lansmanı",
         "2": "İş ve kariyer ağı platformunun geliştirilmesine başlanması"
