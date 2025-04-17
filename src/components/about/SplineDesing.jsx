@@ -10,7 +10,7 @@ import Spline from "@splinetool/react-spline";
 export default function SplineDesing() {
   return (
     <Spline
-      scene="https://prod.spline.design/xlQ1ugBZ1eXnzLAQ/scene.splinecode"
+      scene="https://prod.spline.design/jqxdPs1Pvkw2femA/scene.splinecode"
       className="before:bg-dark-black absolute top-0 right-0 z-40 before:absolute before:right-0 before:bottom-0 before:h-[60px] before:w-[160px]"
     />
   );
