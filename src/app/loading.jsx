@@ -2,7 +2,7 @@ import React from "react";
 
 export default function loading() {
   return (
-    <section className="flex h-full w-full items-center justify-center bg-transparent">
+    <section className="flex h-[calc(100vh-104px)] w-full items-center justify-center bg-transparent">
       <div role="status">
         <svg
           aria-hidden="true"

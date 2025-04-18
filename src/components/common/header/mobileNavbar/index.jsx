@@ -31,7 +31,6 @@ export default function MobileNavbar() {
   const navItem = [
     { href: "/", title: t("navbar.home"), icon: HiHome },
     { href: "/about", title: t("navbar.about"), icon: BsBuildingsFill },
-    { href: "/road-map", title: t("navbar.roadMap"), icon: FaSitemap },
     { href: "/faq", title: t("navbar.faq"), icon: FaQuestionCircle },
     { href: "/contact", title: t("navbar.contact"), icon: RiContactsBookFill },
   ];
