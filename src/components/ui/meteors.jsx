@@ -26,6 +26,7 @@ export const Meteors = ({ number, className }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.1 }}
+      className="hidden md:block"
     >
       {meteorStyles.map((style, idx) => (
         <span

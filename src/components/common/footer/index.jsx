@@ -4,6 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { MdOutlineEmail } from "react-icons/md";
 
 const socialItems = [
   { href: "https://t.me/SolvexNetworkOfficial", icon: FaTelegramPlane },
@@ -105,7 +106,7 @@ export default function Footer() {
               className="group flex items-center gap-3"
             >
               <div className="group-hover:bg-logo flex h-12 w-12 items-center justify-center rounded-[50%] border border-white/10 bg-white/5 p-3 transition-all duration-200">
-                <FaXTwitter className="text-xl text-white transition-all duration-200 group-hover:text-black" />
+                <MdOutlineEmail className="text-xl text-white transition-all duration-200 group-hover:text-black" />
               </div>
               <div className="item-start flex flex-col gap-0.5">
                 <span className="font-medium text-white/70 capitalize">
