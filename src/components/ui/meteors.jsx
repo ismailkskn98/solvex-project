@@ -6,19 +6,21 @@ export const Meteors = ({ number, className }) => {
   const [meteorStyles, setMeteorStyles] = useState([]);
 
   useEffect(() => {
-    const count = number || 20;
-    const styles = new Array(count).fill(true).map((_, idx) => {
-      const meteorCount = count;
-      const position = idx * (800 / meteorCount) - 400;
+    setTimeout(() => {
+      const count = number || 20;
+      const styles = new Array(count).fill(true).map((_, idx) => {
+        const meteorCount = count;
+        const position = idx * (800 / meteorCount) - 400;
 
-      return {
-        left: position + "px",
-        animationDelay: Math.random() * 5 + "s",
-        animationDuration: Math.floor(Math.random() * (10 - 5) + 5) + "s",
-      };
-    });
+        return {
+          left: position + "px",
+          animationDelay: Math.random() * 5 + "s",
+          animationDuration: Math.floor(Math.random() * (10 - 5) + 5) + "s",
+        };
+      });
 
-    setMeteorStyles(styles);
+      setMeteorStyles(styles);
+    }, 750);
   }, [number]);
 
   return (

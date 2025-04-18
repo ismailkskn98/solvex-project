@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { motion, useAnimation } from "motion/react";
 
 export const SparklesCore = (props) => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const {
     id,
     className,
@@ -19,11 +20,13 @@ export const SparklesCore = (props) => {
   } = props;
   const [init, setInit] = useState(false);
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    setTimeout(() => {
+      initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      }).then(() => {
+        setInit(true);
+      });
+    }, 1000);
   }, []);
   const controls = useAnimation();
 
@@ -40,11 +43,11 @@ export const SparklesCore = (props) => {
 
   const generatedId = useId();
   return (
-    <motion.div animate={controls} className={cn("opacity-0", className)}>
+    <motion.div animate={controls} className={cn(`opacity-0`, className)}>
       {init && (
         <Particles
           id={id || generatedId}
-          className={cn("h-full w-full")}
+          className={cn(`h-full w-full ${init ? "opacity-100" : "opacity-0"}`)}
           particlesLoaded={particlesLoaded}
           options={{
             background: {

@@ -1,12 +1,10 @@
 import React from "react";
-// import { Spotlight } from "../ui/spotlight";
 import { SparklesCore } from "../ui/sparkles";
 import { GridBackground } from "../ui/gridBackground";
 
 export default function PageTitle({ title }) {
   return (
     <article className="relative mx-auto mt-8 flex w-full max-w-10/12 flex-col items-center rounded-lg px-10 py-14">
-      {/* <Spotlight className="-top-40 left-0 md:-top-20 md:left-24" fill="#fff" /> */}
       <div className="w-min">
         <h1 className="relative z-20 text-3xl font-bold text-nowrap text-white md:text-6xl lg:text-7xl">
           {title}
