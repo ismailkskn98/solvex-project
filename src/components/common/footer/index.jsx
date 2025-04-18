@@ -19,6 +19,7 @@ export default function Footer() {
   const navItem = [
     { href: "/", title: t("navbar.home") },
     { href: "/about", title: t("navbar.about") },
+    { href: "/products", title: t("navbar.products") },
     { href: "/faq", title: t("navbar.faq") },
     { href: "/contact", title: t("navbar.contact") },
   ];
