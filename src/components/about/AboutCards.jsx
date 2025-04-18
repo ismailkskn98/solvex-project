@@ -26,8 +26,8 @@ export default function AboutCards() {
   ];
 
   return (
-    <div className="relative z-50 mx-auto w-full max-w-10/12">
-      <h2 className="text-[clamp(23px,4vw,40px)] font-medium text-white">
+    <div className="relative z-50 mx-auto mt-16 w-full max-w-full lg:mt-1 xl:max-w-11/12 2xl:max-w-10/12">
+      <h2 className="px-2 text-[clamp(23px,4vw,40px)] font-medium text-white">
         Ne Sunuyoruz?
       </h2>
       <HoverEffect items={offerings} />

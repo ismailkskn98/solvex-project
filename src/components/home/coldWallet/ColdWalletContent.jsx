@@ -22,7 +22,7 @@ export default function ColdWalletContent({ data }) {
     }
   }, [timer]);
   return (
-    <div className="mx-auto grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 xl:w-11/12 xl:gap-12 2xl:gap-16">
+    <div className="mx-auto grid w-full grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 xl:w-11/12 xl:gap-12 2xl:gap-16">
       <div className="space-y-3">
         {data.map((item, index) => (
           <button
@@ -44,7 +44,7 @@ export default function ColdWalletContent({ data }) {
           </button>
         ))}
       </div>
-      <div className="h-full">
+      <div className="hidden h-full md:block">
         <div
           className={cn(
             "relative h-96 w-full overflow-hidden rounded-lg drop-shadow-[0_0_10px_#2f2f4e] md:h-[400px]",

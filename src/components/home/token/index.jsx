@@ -41,7 +41,19 @@ export default function Token() {
   ];
   return (
     <main className="fluid gridContainer mt-24 mb-10 w-full">
-      <TokenDistribution tokenAllocations={tokenAllocations} />
+      <section className="flex flex-col items-center justify-center gap-9 sm:gap-12 md:gap-16">
+        <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">
+          <h2 className="text-[min(7vw,50px)] font-semibold capitalize">
+            sasafsas
+          </h2>
+          <p className="font-base text-[clamp(14px,1.5vw,18px)] leading-7 text-white/70 sm:leading-8 lg:leading-9">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+            quibusdam?
+          </p>
+        </article>
+
+        <TokenDistribution tokenAllocations={tokenAllocations} />
+      </section>
     </main>
   );
 }

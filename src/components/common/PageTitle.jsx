@@ -6,7 +6,7 @@ export default function PageTitle({ title }) {
   return (
     <article className="relative mx-auto mt-8 flex w-full max-w-10/12 flex-col items-center rounded-lg px-10 py-14">
       <div className="w-min">
-        <h1 className="relative z-20 text-3xl font-bold text-nowrap text-white md:text-6xl lg:text-7xl">
+        <h1 className="relative z-20 text-[clamp(39px,8vw,72px)] font-bold text-nowrap text-white md:text-6xl">
           {title}
         </h1>
         <GridBackground className="absolute inset-0 z-20 h-full w-full" />
