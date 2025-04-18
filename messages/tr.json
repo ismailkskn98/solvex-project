@@ -22,6 +22,14 @@
       "blockchain": {
         "title": "Blockchain Tabanlı Akıllı Sözleşme Sistemi",
         "content": "Bağlantılı iş ve kariyer ağında serbest işler için Blockchain tabanlı ödeme ve akıllı sözleşme altyapısı."
+      },
+      "smart": {
+        "title": "Akıllı Sözleşmeler",
+        "content": "Akıllı kontratlarımız Certik tarafından denetlenmiştir. <a>Detaylı raporu</a> incelemek için lütfen Certik web sitesini ziyaret edin."
+      },
+      "decentralized": {
+        "title": "50 milyon token kalıcı olarak yakılmıştır.",
+        "content": "Yakım adresini görüntüler. Detaylı raporu incelemek için lütfen <a>BscScan</a> adresini ziyaret edin."
       }
     },
     "coldWalletSubtitle": "Kripto varlıklarınızı maksimum güvenlikle saklamanın en etkili yolu: çevrimdışı, saldırılara kapalı ve tamamen sizin kontrolünüzde.",

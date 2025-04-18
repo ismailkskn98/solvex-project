@@ -22,6 +22,14 @@
       "blockchain": {
         "title": "Blockchain-Based Smart Contract System",
         "content": "A Blockchain-based payment and smart contract infrastructure for freelance work in the connected business and career network."
+      },
+      "smart": {
+        "title": "Smart Contracts",
+        "content": "Our smart contracts have been audited by Certik. Please visit the Certik website to <a>view the full report</a>."
+      },
+      "decentralized": {
+        "title": "50 million tokens permanently burned.",
+        "content": "Displays the burn address. Please visit <a>BscScan</a> to view the full report."
       }
     },
     "coldWalletSubtitle": "The most effective way to store your crypto assets with maximum security: offline, immune to attacks, and fully under your control.",

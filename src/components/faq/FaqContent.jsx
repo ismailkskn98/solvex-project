@@ -46,6 +46,16 @@ export default function FaqContent() {
       answer:
         "Yol haritasında cüzdan geliştirmeleri, çoklu ağ desteği, fiat entegrasyonu ve iş/kariyer ağı platformu gibi adımlar yer alıyor.",
     },
+    {
+      question: "Akıllı kontratlarınız denetlendi mi?",
+      answer:
+        "Evet, akıllı kontratlarımız Certik tarafından denetlenmiştir. Raporu <a href='certik-audit-link' target='_blank' rel='noopener noreferrer'>buradan</a> inceleyebilirsiniz.",
+    },
+    {
+      question: "Token arzının bir kısmı yakıldı mı?",
+      answer:
+        "Evet, toplam arzın %50'si kalıcı olarak yakılmıştır. Yakım adresine <a href='burn-wallet-address-link' target='_blank' rel='noopener noreferrer'>buradan</a> ulaşabilirsiniz.",
+    },
   ];
 
   return (

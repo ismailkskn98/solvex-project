@@ -4,13 +4,13 @@ import ColdWalletContent from "./ColdWalletContent";
 
 const data = [
   {
-    title: "Soğuk Cüzdan (Cold Wallet) Nedir?",
+    title: "Cüzdan (Wallet) Nedir?",
     content:
-      "Soğuk cüzdan, kripto paraları internete bağlı olmayan bir ortamda saklamaya yarayan bir cüzdan türüdür. İnternete bağlı olmadığı için siber saldırılara, virüslere ya da hack girişimlerine karşı çok daha güvenlidir. Bu yüzden büyük miktarda kripto para tutan kişiler veya kurumlar genellikle soğuk cüzdan kullanır.",
+      "Wallet, kripto paraları internete bağlı olmayan bir ortamda saklamaya yarayan bir cüzdan türüdür. İnternete bağlı olmadığı için siber saldırılara, virüslere ya da hack girişimlerine karşı çok daha güvenlidir. Bu yüzden büyük miktarda kripto para tutan kişiler veya kurumlar genellikle wallet kullanır.",
     srcImage: "/images/cold-wallet/cold-wallet-2.webp",
   },
   {
-    title: "En yaygın soğuk cüzdan türleri",
+    title: "En yaygın wallet türleri",
     content:
       "Donanım cüzdanları (örneğin: Ledger, Trezor gibi USB cihazları) ve Kâğıt cüzdanlar (QR kod veya özel anahtarların yazdırıldığı belgeler)",
     srcImage: "/images/cold-wallet/cold-wallet-1.webp",
@@ -37,7 +37,7 @@ export function ColdWallet() {
       <section className="flex w-full flex-col items-center justify-between gap-9 sm:gap-12 md:gap-16">
         <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">
           <h2 className="text-[min(7vw,50px)] font-semibold capitalize">
-            Cold Wallet
+            Wallet
           </h2>
           <p className="font-base text-[clamp(13px,2.6vw,15px)] leading-6 text-white/80 lg:leading-8 xl:leading-9">
             {t("coldWalletSubtitle")}

@@ -5,7 +5,6 @@ import { MdDomainVerification } from "react-icons/md";
 import { FaPowerOff } from "react-icons/fa";
 import { SiBlockchaindotcom } from "react-icons/si";
 import { useTranslations } from "next-intl";
-
 export default function Services() {
   const t = useTranslations("HomePage");
 
