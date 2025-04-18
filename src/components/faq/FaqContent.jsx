@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import faqImage from "@/../public/images/faq-image3.webp";
 
 export default function FaqContent() {
   return (
@@ -30,12 +31,14 @@ export default function FaqContent() {
         </article>
         <article className="h-full w-full max-w-[40%] flex-1">
           <Image
-            src="/images/faq-image3.webp"
+            src={faqImage}
             alt="solvex sık sorulan sorular resim"
             width={700}
             height={600}
             quality={100}
             className="h-[450px] object-contain object-center"
+            placeholder="blur"
+            blurDataURL={faqImage.blurDataURL}
           />
         </article>
       </section>
