@@ -90,7 +90,7 @@ export default function MobileNavbar() {
               className="flex items-center gap-2"
             >
               <Image
-                src={"/images/common/logo.png"}
+                src={"/images/common/logo.webp"}
                 width={60}
                 height={60}
                 alt=""
