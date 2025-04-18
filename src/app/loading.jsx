@@ -2,10 +2,9 @@ import React from "react";
 
 export default function loading() {
   return (
-    <section className="flex h-[calc(100vh-104px)] w-full items-center justify-center bg-transparent">
+    <section className="bg-dark-black flex h-dvh w-full items-center justify-center">
       <div class="loader">
         <div></div>
-
         <div></div>
       </div>
     </section>
