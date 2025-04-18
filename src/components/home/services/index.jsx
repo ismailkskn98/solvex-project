@@ -4,7 +4,6 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { MdDomainVerification } from "react-icons/md";
 import { FaPowerOff } from "react-icons/fa";
 import { SiBlockchaindotcom } from "react-icons/si";
-import Threads from "@/components/ui/threadBackground";
 import { useTranslations } from "next-intl";
 
 export default function Services() {
@@ -35,9 +34,7 @@ export default function Services() {
 
   return (
     <main className="fluid gridContainer overf relative mt-20 w-full lg:mt-32">
-      <div className="fluid absolute inset-x-0 top-0 -z-10 hidden h-full w-full overflow-hidden md:top-[min(30vw,30rem)] md:block">
-        <Threads amplitude={1} distance={0} enableMouseInteraction={true} />
-      </div>
+      <div className="fluid absolute inset-x-0 top-0 -z-10 hidden h-full w-full overflow-hidden md:top-[min(30vw,30rem)] md:block"></div>
       <section className="fluid flex flex-col items-center justify-center gap-9 sm:gap-12 md:gap-16">
         <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">
           <h2 className="text-[min(7vw,50px)] font-semibold capitalize">

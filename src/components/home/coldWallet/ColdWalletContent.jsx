@@ -56,7 +56,7 @@ export default function ColdWalletContent({ data }) {
               width={900}
               height={500}
               className={cn(
-                "absolute h-[500px] w-full transform-gpu rounded-lg object-cover transition-all duration-300",
+                "absolute h-[500px] w-full transform-gpu rounded-lg object-contain transition-all duration-300",
                 featureOpen === index ? "scale-100" : "scale-70",
                 featureOpen > index ? "translate-y-full" : "",
               )}

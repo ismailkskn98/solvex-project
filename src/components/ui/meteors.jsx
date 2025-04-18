@@ -6,7 +6,7 @@ export const Meteors = ({ number, className }) => {
   const [meteorStyles, setMeteorStyles] = useState([]);
 
   useEffect(() => {
-    const count = number || 70;
+    const count = number || 20;
     const styles = new Array(count).fill(true).map((_, idx) => {
       const meteorCount = count;
       const position = idx * (800 / meteorCount) - 400;
@@ -22,13 +22,18 @@ export const Meteors = ({ number, className }) => {
   }, [number]);
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.1 }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.1 }}
+    >
       {meteorStyles.map((style, idx) => (
         <span
           key={"meteor" + idx}
-          className={`animate-meteor-effect absolute h-0.5 w-0.5 rotate-[45deg] rounded-[9999px] bg-white shadow-[0_0_0_1px_#ffffff10] before:absolute before:top-1/2 before:h-[1px] before:w-[50px] before:-translate-y-[50%] before:transform before:bg-gradient-to-r before:from-[#64748b] before:to-transparent before:content-[''] ${className}`}
+          className={`animate-meteor-effect absolute h-0.5 w-0.5 rotate-[45deg] rounded-[9999px] bg-white before:absolute before:top-1/2 before:h-[1px] before:w-[50px] before:-translate-y-[50%] before:transform before:bg-gradient-to-r before:from-[#64748b] before:to-transparent before:content-[''] ${className}`}
           style={{
             top: "-30px",
+            willChange: "transform, opacity",
             ...style,
           }}
         ></span>

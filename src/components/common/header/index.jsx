@@ -17,7 +17,7 @@ export default function Header() {
       <header className="flex w-full items-center justify-between pt-0 pr-3 pb-6 pl-1 lg:px-0 lg:py-6">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src={"/images/common/logo.png"}
+            src={"/images/common/logo.webp"}
             width={60}
             height={60}
             alt=""

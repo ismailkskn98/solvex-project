@@ -51,7 +51,8 @@ export default function LogoMarquee() {
             height={80}
             src={company.image}
             alt={company.name || ""}
-            className="h-[70px] w-[90px] grayscale-[95%] transition-all duration-200 hover:grayscale-0"
+            quality={70}
+            className="h-[90px] w-[90px] object-contain object-center grayscale-[95%] transition-all duration-200 hover:grayscale-0"
           />
         </Link>
       ))}

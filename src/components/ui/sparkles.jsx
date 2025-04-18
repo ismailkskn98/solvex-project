@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import React, { useId } from "react";
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -57,11 +57,11 @@ export const SparklesCore = (props) => {
               zIndex: 1,
             },
 
-            fpsLimit: 120,
+            fpsLimit: 50,
             interactivity: {
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: "push",
                 },
                 onHover: {
@@ -218,7 +218,7 @@ export const SparklesCore = (props) => {
                   mode: "delete",
                   value: 0,
                 },
-                value: particleDensity || 120,
+                value: 100,
               },
               opacity: {
                 value: {
@@ -257,13 +257,13 @@ export const SparklesCore = (props) => {
               },
               size: {
                 value: {
-                  min: minSize || 1,
-                  max: maxSize || 3,
+                  minSize: 0.5,
+                  maxSize: 2,
                 },
                 animation: {
                   count: 0,
                   enable: false,
-                  speed: 5,
+                  speed: 2,
                   decay: 0,
                   delay: 0,
                   sync: false,
@@ -413,8 +413,9 @@ export const SparklesCore = (props) => {
                 speed: 1,
               },
             },
-            detectRetina: true,
-          }} />
+            detectRetina: false,
+          }}
+        />
       )}
     </motion.div>
   );

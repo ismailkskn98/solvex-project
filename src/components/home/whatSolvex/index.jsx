@@ -1,11 +1,16 @@
 "use client";
-import { Globe } from "@/components/magicui/globe";
 import { DotBackground } from "@/components/ui/dotBackground";
 import React from "react";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { MdToken } from "react-icons/md";
 import { MdHealthAndSafety } from "react-icons/md";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+const Globe = dynamic(
+  () => import("@/components/magicui/globe").then((mod) => mod.Globe),
+  { ssr: false },
+);
 
 export default function WhatSolvex() {
   const t = useTranslations("HomePage");

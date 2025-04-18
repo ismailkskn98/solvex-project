@@ -38,7 +38,7 @@ const data = [
 export function ColdWallet() {
   const t = useTranslations("HomePage");
   return (
-    <main className="fluid gridContainer relative mt-20 w-full pb-24 lg:mt-[min(20vw,23rem)] lg:pb-32 xl:pb-40 2xl:pb-48">
+    <main className="fluid gridContainer relative mt-32 w-full pb-24 lg:pb-32 xl:pb-40 2xl:pb-48">
       <div className="fluid absolute inset-0 -z-10 bg-gradient-to-t from-[#2f2f4e]/50 to-transparent"></div>
       <section className="flex w-full flex-col items-center justify-between gap-9 sm:gap-12 md:gap-16">
         <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">

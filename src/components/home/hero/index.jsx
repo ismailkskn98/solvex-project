@@ -1,9 +1,8 @@
-import { Meteors } from "@/components/ui/meteors";
-import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import React from "react";
 import HeroContent from "./HeroContent";
 import HeroIcons from "./HeroIcons";
+import { StarsBackground } from "@/components/ui/stars-background";
+import { Meteors } from "@/components/ui/meteors";
 
 export default function Hero() {
   return (
@@ -15,7 +14,6 @@ export default function Hero() {
         <Meteors />
       </section>
       <StarsBackground />
-      <ShootingStars />
       <HeroContent />
       <HeroIcons />
     </main>

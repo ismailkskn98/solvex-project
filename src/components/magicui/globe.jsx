@@ -12,12 +12,12 @@ const GLOBE_CONFIG = {
   width: 600,
   height: 600,
   onRender: () => {},
-  devicePixelRatio: 2,
+  devicePixelRatio: 1,
   phi: 0,
   theta: 0.3,
   dark: 1, // siyah arka planla uyumlu
   diffuse: 0.4,
-  mapSamples: 16000,
+  mapSamples: 8000,
   mapBrightness: 1.4,
   baseColor: [0.41, 0.15, 1], // --color-purple-bright (#6d18ff)
   markerColor: [0.85, 0.71, 1], // --color-lavender-light (#d9b6ff)
@@ -46,8 +46,8 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   const r = useMotionValue(0);
   const rs = useSpring(r, {
     mass: 1,
-    damping: 30,
-    stiffness: 100,
+    damping: 20,
+    stiffness: 70,
   });
 
   const updatePointerInteraction = (value) => {
@@ -77,13 +77,13 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
 
     const globe = createGlobe(canvasRef.current, {
       ...config,
-      width: width * 2,
-      height: width * 2,
+      width: width,
+      height: width,
       onRender: (state) => {
-        if (!pointerInteracting.current) phi += 0.005;
+        if (!pointerInteracting.current) phi += 0.002;
         state.phi = phi + rs.get();
-        state.width = width * 2;
-        state.height = width * 2;
+        state.width = width;
+        state.height = width;
       },
     });
 

@@ -38,7 +38,7 @@ export default function Footer() {
           <article className="col-span-2 flex flex-col gap-5 md:col-span-1">
             <div className="flex items-center gap-2">
               <Image
-                src={"/images/common/logo.png"}
+                src={"/images/common/logo.webp"}
                 width={150}
                 height={70}
                 alt=""
