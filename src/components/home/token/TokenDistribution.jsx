@@ -16,13 +16,15 @@ export default function TokenDistribution({ tokenAllocations }) {
         data: tokenAllocations.map((item) => item.percentage),
         backgroundColor: tokenAllocations.map((item) => item.color),
         borderColor: "#ffffff",
-        borderWidth: 2,
+        borderWidth: 0,
         hoverOffset: 20,
       },
     ],
   };
 
   const options = {
+    cutout: "1%",
+    responsive: true,
     plugins: {
       tooltip: {
         callbacks: {
@@ -44,12 +46,12 @@ export default function TokenDistribution({ tokenAllocations }) {
   };
 
   return (
-    <section className="mx-auto flex w-full max-w-10/12 items-center justify-center gap-6">
-      <div className="w-[550px]">
+    <section className="mx-auto flex w-full max-w-full flex-col items-center justify-center gap-12 lg:flex-row xl:max-w-11/12 2xl:max-w-10/12">
+      <div className="order-2 w-[450px] lg:order-1">
         <Doughnut data={data} options={options} ref={chartRef} />
       </div>
 
-      <div className="grid w-full grid-cols-2 gap-4 md:w-1/2">
+      <div className="order-1 grid w-full grid-cols-1 gap-4 md:w-1/2 lg:order-2 xl:grid-cols-2">
         {tokenAllocations.map((item, index) => (
           <Card
             key={index}
@@ -61,9 +63,9 @@ export default function TokenDistribution({ tokenAllocations }) {
                 : ""
             }`}
           >
-            <CardContent className="flex gap-4 p-4">
+            <CardContent className="flex gap-3 p-2">
               <div
-                className="mt-1 h-4 w-4 rounded-full"
+                className="mt-1 h-5 w-5 rounded-full"
                 style={{ backgroundColor: item.color }}
               />
               <div>
