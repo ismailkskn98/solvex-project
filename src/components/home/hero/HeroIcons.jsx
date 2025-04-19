@@ -9,7 +9,10 @@ export default function HeroIcons() {
   return (
     <main className="absolute inset-0 h-full w-full overflow-hidden">
       <ParallaxProvider>
-        <Parallax speed={-20} className="absolute -bottom-40 left-28">
+        <Parallax
+          speed={-20}
+          className="absolute -bottom-72 -left-72 rotate-45 md:-bottom-64 lg:left-0 xl:-bottom-52 xl:left-10 2xl:left-28"
+        >
           <Image
             src="/images/home/star.svg"
             width={200}
@@ -18,7 +21,10 @@ export default function HeroIcons() {
             className="h-[500px] w-[500px] rotate-6 object-contain"
           />
         </Parallax>
-        <Parallax speed={-20} className="absolute -top-28 -right-64">
+        <Parallax
+          speed={-20}
+          className="absolute -top-72 -right-64 sm:-top-64 lg:-top-56 xl:-top-28"
+        >
           <Image
             src="/images/home/star.svg"
             width={200}
@@ -28,7 +34,10 @@ export default function HeroIcons() {
           />
         </Parallax>
 
-        <Parallax speed={-10} className="absolute -top-24 left-0">
+        <Parallax
+          speed={-10}
+          className="absolute -top-32 -left-16 lg:-top-24 lg:left-0"
+        >
           <article className="icon-hexagon absolute top-16 left-32 h-20 w-20 bg-white/10 p-1">
             <div className="icon-hexagon flex h-full w-full items-center justify-center bg-white/15">
               <FaEthereum className="text-[min(8vw,35px)] text-white" />
@@ -69,7 +78,10 @@ export default function HeroIcons() {
             />
           </div>
         </Parallax>
-        <Parallax speed={-10} className="absolute right-0 -bottom-24">
+        <Parallax
+          speed={-10}
+          className="absolute -right-16 -bottom-32 lg:right-0 lg:-bottom-24"
+        >
           <article className="icon-hexagon absolute right-32 bottom-16 h-20 w-20 bg-white/10 p-1">
             <div className="icon-hexagon flex h-full w-full items-center justify-center bg-white/15">
               <BsCurrencyBitcoin className="text-[min(8vw,35px)] text-white" />

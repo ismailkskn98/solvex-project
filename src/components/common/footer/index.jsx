@@ -129,6 +129,9 @@ export default function Footer() {
               Weecoins Premium
             </Link>
           </p>
+          <small className="pointer-events-none absolute right-0 bottom-0 -z-50 bg-transparent text-transparent opacity-0">
+            İsmail Keskin
+          </small>
         </section>
       </main>
     </footer>

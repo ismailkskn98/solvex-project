@@ -10,14 +10,14 @@ const companies = [
     name: "Skynet Certik",
   },
   {
-    href: "https://coinpaprika.com/tr/coin/wcp-weecoins-premium/",
-    image: "/images/carousel-images/Coinpaprika.webp",
-    title: "Coinpaprika",
-  },
-  {
     href: "https://coinmarketcap.com/currencies/solvex-network/",
     image: "/images/carousel-images/CoinMarketCap.webp",
     name: "CoinMarketCap",
+  },
+  {
+    href: "https://www.bitmart.com/trade/en-US?type=spot&symbol=SOLVEX_USDT",
+    image: "/images/carousel-images/bitmart.svg",
+    name: "bitmart",
   },
   {
     href: "https://www.coingecko.com/tr/coins/solvex-network",
@@ -30,14 +30,9 @@ const companies = [
     name: "Mexc",
   },
   {
-    href: "https://www.coinbase.com/price/weecoins-premium",
-    image: "/images/carousel-images/Coinbase-New.webp",
-    name: "Coinbase",
-  },
-  {
-    href: "https://www.coingecko.com/tr/coins/weecoins-premium",
-    image: "/images/carousel-images/coingecko-1.webp",
-    name: "CoinGecko",
+    href: "https://www.kcex.com/tr-TR/exchange/SOLVEX_USDT",
+    image: "/images/carousel-images/kcex.png",
+    name: "Mexc",
   },
 ];
 
@@ -52,7 +47,7 @@ export default function LogoMarquee() {
             src={company.image}
             alt={company.name || ""}
             quality={70}
-            className="h-[90px] w-[90px] object-contain object-center grayscale-[95%] transition-all duration-200 hover:grayscale-0"
+            className={`h-[90px] w-[90px] object-contain object-center grayscale-[95%] transition-all duration-200 hover:grayscale-0 ${company.name === "bitmart" ? "invert-100" : ""}`}
           />
         </Link>
       ))}
