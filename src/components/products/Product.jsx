@@ -24,6 +24,8 @@ export default function Product({ label, content, image }) {
               width={400}
               height={300}
               className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
+              placeholder="blur"
+              blurDataURL={image.blurDataURL}
             />
           ) : (
             <div className="mt-4 flex w-full flex-1 rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />

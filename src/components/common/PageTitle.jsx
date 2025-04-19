@@ -2,11 +2,13 @@ import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 import { GridBackground } from "../ui/gridBackground";
 
-export default function PageTitle({ title }) {
+export default function PageTitle({ title, isFaqPage = false }) {
   return (
     <article className="relative mx-auto mt-8 flex w-full max-w-10/12 flex-col items-center rounded-lg px-10 py-14">
       <div className="w-min">
-        <h1 className="relative z-20 text-[clamp(39px,8vw,72px)] font-bold text-nowrap text-white md:text-6xl">
+        <h1
+          className={`relative z-20 ${isFaqPage ? "text-[clamp(23px,6vw,72px)]" : "text-[clamp(39px,8vw,72px)]"} font-bold text-nowrap text-white md:text-6xl`}
+        >
           {title}
         </h1>
         <GridBackground className="absolute inset-0 z-20 h-full w-full" />

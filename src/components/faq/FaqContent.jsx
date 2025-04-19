@@ -49,7 +49,7 @@ export default function FaqContent() {
 
   return (
     <main>
-      <PageTitle title={t("h1")} />
+      <PageTitle isFaqPage={true} title={t("h1")} />
       <section className="mx-auto mt-14 flex w-full max-w-full flex-col items-center justify-between gap-12 pb-20 lg:mt-20 lg:flex-row lg:items-start xl:max-w-11/12 2xl:max-w-10/12">
         <article className="flex w-full flex-1 flex-col items-start gap-4">
           <h2 className="mb-3 bg-clip-text text-[clamp(20px,3vw,35px)] font-medium text-white/90">

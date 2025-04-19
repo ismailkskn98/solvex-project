@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Blockchain'i Kolaylaştırır",
+    "description": "Solvex Network, teknik bilgi gerekmeden blockchain'in sunduğu avantajları herkesin kullanımına sunan merkeziyetsiz bir projedir.",
+    "keywords": "solvex, Solvex Network, blockchain, DeFi, merkeziyetsiz finans, kripto para, BNB Chain, token yakımı, likidite kilitleme, topluluk odaklı proje"
+  },
   "HomePage": {
     "heroContent": "Toplumun teknik bilgiye ihtiyaç duymadan blockchain teknolojisinden faydalanmasını sağlayan, karmaşıklığı ortadan kaldıran yenilikçi ürünler sunuyoruz.",
     "heroSubContent": "Solvex Network, blockchain teknolojisinin sunduğu şeffaflık ve güvenlik olanaklarını kullanıcı yararına sunar. ",

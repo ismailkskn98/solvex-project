@@ -7,6 +7,7 @@ import Header from "@/components/common/header";
 
 import { ReactLenis } from "@/utils/lenis";
 import Footer from "@/components/common/footer";
+import { getTranslations } from "next-intl/server";
 
 const interTight = localFont({
   src: [
@@ -51,23 +52,22 @@ const interTight = localFont({
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
+  const t = await getTranslations({ locale: locale });
 
   return {
-    title: "Solvex Network | Blockchain'i Kolaylaştırır",
-    description:
-      "Solvex Network, teknik bilgi gerekmeden blockchain'in sunduğu avantajları herkesin kullanımına sunan merkeziyetsiz bir projedir.",
-    keywords:
-      "solvex, Solvex Network, blockchain, DeFi, merkeziyetsiz finans, kripto para, BNB Chain, token yakımı, likidite kilitleme, topluluk odaklı proje",
+    title: `Solvex Network | ${t("metadata.title")}`,
+    description: t("metadata.title"),
+    keywords: t("metadata.title"),
     robots: "index, follow",
     icons: {
       icon: [{ url: "/logo.png", type: "image/png", sizes: "512x512" }, ,],
     },
-    meta: [
-      {
-        name: "google-site-verification",
-        content: "im-2q85dxUJnm9vFy7b2UdfvJKVljHp6Fz9o07cHyWQ",
-      },
-    ],
+    // meta: [
+    //   {
+    //     name: "google-site-verification",
+    //     content: "im-2q85dxUJnm9vFy7b2UdfvJKVljHp6Fz9o07cHyWQ",
+    //   },
+    // ],
   };
 }
 

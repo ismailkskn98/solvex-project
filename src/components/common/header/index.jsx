@@ -9,7 +9,7 @@ import MobileNavbar from "./mobileNavbar";
 export default function Header() {
   return (
     <>
-      <section className="fluid gridContainer relative w-full py-3 lg:!hidden">
+      <section className="fluid gridContainer relative w-full px-3 py-3 lg:!hidden">
         <main className="fluid flex w-full items-center justify-end">
           <LanguageChange />
         </main>

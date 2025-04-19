@@ -55,6 +55,8 @@ export default function ColdWalletContent({ data }) {
               alt={item.title}
               width={900}
               height={500}
+              placeholder="blur"
+              blurDataURL={item.blurDataURL}
               className={cn(
                 "absolute h-[500px] w-full transform-gpu rounded-[12px] object-contain transition-all duration-300",
                 featureOpen === index ? "scale-100" : "scale-70",
