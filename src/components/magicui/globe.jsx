@@ -3,6 +3,8 @@
 import createGlobe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
+
 
 import { cn } from "@/lib/utils";
 
@@ -42,6 +44,9 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { margin: "0px", amount: 0.5 }); 
+
 
   const r = useMotionValue(0);
   const rs = useSpring(r, {
@@ -80,6 +85,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       width: width,
       height: width,
       onRender: (state) => {
+        if (!isInView) return;
         if (!pointerInteracting.current) phi += 0.002;
         state.phi = phi + rs.get();
         state.width = width;
@@ -96,6 +102,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
 
   return (
     <div
+      ref={containerRef}
       className={cn(
         "absolute inset-x-0 top-1/2 mx-auto aspect-[1/1] w-[400px] -translate-y-1/2 xl:w-[500px] 2xl:w-[600px]",
         className,
