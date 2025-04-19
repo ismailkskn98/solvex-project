@@ -2,6 +2,8 @@ import React from "react";
 import SplineDesing from "./SplineDesing";
 import PageTitle from "../common/PageTitle";
 import AboutCards from "./AboutCards";
+import Image from "next/image";
+import AboutImage from "@/../public/images/about-image.webp";
 
 export default function AboutContent() {
   return (
@@ -28,6 +30,16 @@ export default function AboutContent() {
           </p>
         </article>
         <article className="relative order-1 h-[350px] min-h-[350px] w-full max-w-full flex-1 lg:order-1 lg:h-[120%] lg:max-w-1/2 xl:max-w-[40%]">
+          <Image
+            src={AboutImage}
+            placeholder="blur"
+            blurDataURL={AboutImage.blurDataURL}
+            alt="contact image"
+            width={480}
+            height={520}
+            quality={100}
+            className="block h-full w-full object-contain lg:hidden"
+          />
           <SplineDesing />
         </article>
       </section>

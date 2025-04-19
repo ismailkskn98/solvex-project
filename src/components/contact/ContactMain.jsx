@@ -6,6 +6,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
+import contactImage from "@/../public/images/contact-image.webp";
 
 export default function ContactMain() {
   return (
@@ -26,6 +28,16 @@ export default function ContactMain() {
         </article>
         <article className="relative h-full min-h-[350px] w-full flex-1 lg:min-h-[500px]">
           <ContactSpline />
+          <Image
+            quality={100}
+            src={contactImage}
+            placeholder="blur"
+            blurDataURL={contactImage.blurDataURL}
+            alt="contact image"
+            width={500}
+            height={350}
+            className="block h-full w-full object-cover lg:hidden"
+          />
           <div className="absolute right-0 bottom-0 z-50 flex items-center gap-3">
             <Link
               href={"mailto:info@solvex.network"}
