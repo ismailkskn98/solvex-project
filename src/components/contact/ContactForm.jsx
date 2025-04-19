@@ -32,6 +32,7 @@ export default function ContactForm() {
   const handleSubmit = async (values, actions) => {
     try {
       const baseURL = window.location.origin;
+      console.log(values);
       const apiURL = `${baseURL}/api/contact-form`;
       const response = await fetch(apiURL, {
         method: "POST",

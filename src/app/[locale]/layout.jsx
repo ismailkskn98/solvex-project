@@ -8,6 +8,7 @@ import Header from "@/components/common/header";
 import { ReactLenis } from "@/utils/lenis";
 import Footer from "@/components/common/footer";
 import { getTranslations } from "next-intl/server";
+import { Toaster } from "sonner";
 
 const interTight = localFont({
   src: [
@@ -87,6 +88,7 @@ export default async function LocaleLayout({ params, children }) {
             className="fluid gridContainer w-full transition-transform duration-300"
           >
             <NextIntlClientProvider>
+              <Toaster position="top-center" richColors theme="dark" />
               <Header />
               {children}
               <Footer />

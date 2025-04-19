@@ -1,75 +1,35 @@
-import { NextResponse, NextRequest } from "next/server";
-import mailer from "nodemailer";
+// pages/api/contact.js
+import nodemailer from "nodemailer";
 
-export async function POST(req) {
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res
+      .status(405)
+      .json({ message: "Sadece POST isteklerine izin verilir" });
+  }
+
+  const { name, email, message } = req.body;
+
+  // Mail yapılandırması (örnek olarak Gmail)
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.MAIL_USER, // .env'den al
+      pass: process.env.MAIL_PASS,
+    },
+  });
+
   try {
-    const body = await req.json();
-    const { name, email, message } = body;
-    console.log(name, email, message);
-    if (!name || name.length < 3) {
-      return NextResponse.json({
-        status: false,
-        message: "Geçerli bir isim giriniz",
-      });
-    }
-    if (
-      !email ||
-      email.length < 3 ||
-      !email.includes("@") ||
-      !email.includes(".")
-    ) {
-      return NextResponse.json({
-        status: false,
-        message: "Geçerli bir e-posta adresi giriniz.",
-      });
-    }
-
-    if (!message || message.length < 10) {
-      return NextResponse.json({
-        status: false,
-        message: "Mesajınız en az 10 karakter uzunluğunda olmalıdır.",
-      });
-    }
-
-    let htmlResponse = `
-      <p><strong>Adınız:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Mesajınız:</strong> ${message}</p>
-    `;
-
-    const transporter = mailer.createTransport({
-      host: "mailing.weecoins.org",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "mail@weecard.org",
-        pass: "Weecard2025!",
-      },
-      tls: {
-        rejectUnauthorized: false,
-        minVersion: "TLSv1.2",
-      },
+    await transporter.sendMail({
+      from: email,
+      to: "weecoins.frontend.dev@gmail.com", // nereye yönlendirmek istiyorsan
+      subject: `Yeni mesaj: ${name}`,
+      text: message,
     });
 
-    // mail@weecard.org
-    const mailOptions = {
-      from: "mail@weecard.org",
-      to: "mail@weecard.org",
-      subject: "WeeCoins Premium - Web Sayfasından Mesaj",
-      html: htmlResponse,
-    };
-
-    let mailResult = await transporter.sendMail(mailOptions);
-
-    return NextResponse.json({
-      status: true,
-      message: "Mesajınız başarıyla gönderildi!",
-    });
+    res.status(200).json({ message: "Mail gönderildi" });
   } catch (error) {
-    console.error("E-posta gönderilirken hata oluştu:", error);
-    return NextResponse.json({
-      status: false,
-      message: "Bir hata oluştu, lütfen tekrar deneyiniz.",
-    });
+    console.error("Mail gönderim hatası:", error);
+    res.status(500).json({ message: "Mail gönderilemedi" });
   }
 }
