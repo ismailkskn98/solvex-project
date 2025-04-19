@@ -6,6 +6,32 @@
     "whySolvexReply": "Solvex Network is a decentralized and community-driven cryptocurrency project built on the BNB Chain Ecosystem. Initially focusing on decentralized finance (DeFi) solutions, the project later transitioned to a community-governed model, aiming to ensure long-term stability through measures such as token burns and liquidity locking. This structure aims to increase the project's credibility and earn the trust of investors and users.",
     "services": "Services",
     "servicesSubtitle": "Thanks to these technical features, Solvex offers not just a token but a comprehensive ecosystem that protects user data and transactions.",
+    "auditReports": "Audit Reports",
+    "tokenTitle": "Token Distribution",
+    "tokenTotal": "Total Supply",
+    "tokenSubtitle": "Explore the structure where a large portion of the token supply is burned, while the remaining is distributed in a balanced way across marketing, development, liquidity, and circulation use cases.",
+    "tokenAllocations": {
+      "marketing": {
+        "title": "Marketing",
+        "content": "Marketing and promotional activities"
+      },
+      "development": {
+        "title": "Development",
+        "content": "Project development and research activities"
+      },
+      "liquidity": {
+        "title": "Liquidity",
+        "content": "PancakeSwap liquidity pool"
+      },
+      "burnedTokens": {
+        "title": "Burned Tokens",
+        "content": "Permanently burned tokens."
+      },
+      "communit": {
+        "title": "Community & Market Circulation",
+        "content": "Tokens in circulation."
+      }
+    },
     "servicesItem": {
       "system": {
         "title": "Corporate Verification System",
@@ -32,7 +58,25 @@
         "content": "Displays the burn address. Please visit <a>BscScan</a> to view the full report."
       }
     },
-    "coldWalletSubtitle": "The most effective way to store your crypto assets with maximum security: offline, immune to attacks, and fully under your control.",
+    "solvexWalletSubtitle": "The most effective way to store your crypto assets with maximum security: offline, immune to attacks, and fully under your control.",
+    "solvexWalletData": {
+      "whySolvex": {
+        "title": "What is Solvex Wallet?",
+        "content": "Solvex Wallet is a Web3-based decentralized wallet protected by top-tier security measures. It offers users a secure and user-friendly experience where private keys are completely under their control."
+      },
+      "security": {
+        "title": "Full Freedom and Privacy",
+        "content": "Solvex Wallet is designed to ensure full freedom and privacy in the blockchain world. It prioritizes user privacy in every transaction and never shares your data or keys with third parties."
+      },
+      "Web3": {
+        "title": "Integrated with the Web3 Ecosystem",
+        "content": "With Solvex Wallet, you can securely store and transfer your tokens and easily access dApps in the Web3 world. You can also connect to your favorite protocols with a single touch."
+      },
+      "safe": {
+        "title": "Security Comes First",
+        "content": "Solvex Wallet is equipped with advanced encryption, multi-factor authentication, and hardware security measures to protect user funds. It never compromises on security."
+      }
+    },
     "navbar": {
       "home": "Home",
       "about": "About Us",
@@ -47,57 +91,101 @@
       "siteMap": "Site Map",
       "contactTitle": "Contact Us",
       "contactSubtitle": "Our team is always ready to answer your questions. Get in touch with us!",
-      "copyright": "Solvex Network © All Rights Reserved."
+      "copyright": "Solvex Network © All Rights Reserved.",
+      "quickAccessItems": {
+        "weOffer": "What We Offer",
+        "products": "Our Products",
+        "faq": "What is Solvex?",
+        "contact": "Contact Form"
+      }
     }
   },
-  "RoadMapPage": {
-    "q1_2025": {
-      "title": "Q1 2025",
-      "content": {
-        "1": "Development of core security infrastructure and basic wallet functionality",
-        "2": "Research and planning for multi-chain support integration"
+  "AboutPage": {
+    "h1": "About Us",
+    "h2": "What Does Solvex Network Aim for?",
+    "subtitle": "Solvex Network aims to enable society to benefit from blockchain technology without the need for technical knowledge by offering innovative products that eliminate the complexity of blockchain. With the solutions we develop, we combine user-friendly experiences with high security standards, enabling individuals, institutions, and developers to easily integrate into the blockchain ecosystem.",
+    "subtitle2": "We are working to build a secure, transparent, and accessible digital economy. We move forward with a vision that aims for everyone to benefit from the advantages of blockchain.",
+    "cards": {
+      "title": "What Do We Offer?",
+      "verify": {
+        "title": "Corporate Verification System",
+        "content": "Profile verification system conducted through approved institutions integrated with the business and career network."
+      },
+      "secure": {
+        "title": "Secure and User-Friendly Wallet",
+        "content": "User-friendly wallet supporting multiple networks with zero technical knowledge required."
+      },
+      "onRamp": {
+        "title": "On/Off-Ramp Platform",
+        "content": "An integrated financial system where you can convert Solvex tokens to TRY and vice versa."
+      },
+      "smart": {
+        "title": "Smart Contract System",
+        "content": "Blockchain-based payment and smart contract infrastructure for freelance jobs."
       }
-    },
-    "q2_2025": {
-      "title": "Q2 2025",
-      "content": {
-        "1": "Launch of alpha version with basic token management and security features",
-        "2": "Implementation of support for major blockchain networks"
+    }
+  },
+  "ProductPage": {
+    "h1": "Products",
+    "subtitle": "Our solutions that make blockchain technology accessible to everyone",
+    "productCards": {
+      "card1": {
+        "title": "Digital Card",
+        "content": "Create fast, effective, and modern communication with QR codes and digital links."
+      },
+      "card2": {
+        "title": "Automatic Buy-Sell Bot",
+        "content": "An automatic crypto buy-sell bot working 24/7 according to the strategies you set."
+      },
+      "card3": {
+        "title": "Wallet",
+        "content": "A secure, easy-to-use wallet system with multi-network support, requiring no technical knowledge."
       }
-    },
-    "q3_2025": {
-      "title": "Q3 2025",
-      "content": {
-        "1": "Comprehensive security audits and beta testing with expanded features",
-        "2": "Market research and regulatory compliance analysis for fiat integration"
-      }
-    },
-    "q4_2025": {
-      "title": "Q4 2025",
-      "content": {
-        "1": "Full release of the wallet with complete feature set and security measures",
-        "2": "Beginning of payment infrastructure development and banking partnerships"
-      }
-    },
-    "q1_2026": {
-      "title": "Q1 2026",
-      "content": {
-        "1": "Initial testing of fiat-to-crypto conversion system with selected users",
-        "2": "Design and architecture planning for the business and career network"
-      }
-    },
-    "q2_2026": {
-      "title": "Q2 2026",
-      "content": {
-        "1": "Official launch of the fiat gateway with full banking integration",
-        "2": "Start of development for the business and career network platform"
+    }
+  },
+  "FaqPage": {
+    "h1": "Frequently Asked Questions",
+    "h2": "Frequently asked questions about Solvex",
+    "faqCards": {
+      "card1": {
+        "title": "What is Solvex Wallet?",
+        "content": "Solvex Wallet is a user-friendly wallet that supports different blockchain networks without requiring technical knowledge."
+      },
+      "card2": {
+        "title": "Do I need technical knowledge to use the wallet?",
+        "content": "No, Solvex Wallet is designed to be easy to use for everyone. You can perform transactions without needing technical knowledge."
+      },
+      "card3": {
+        "title": "Can I convert Solvex Token to Turkish Lira?",
+        "content": "Yes. With the developed On/Off-Ramp platform, you can convert Solvex tokens to Turkish Lira and purchase tokens with TL."
+      },
+      "card4": {
+        "title": "How does Solvex Network's verification system work?",
+        "content": "The Corporate Verification System enables user profiles to be verified by approved institutions linked to the business and career network."
+      },
+      "card5": {
+        "title": "What is the purpose of the smart contract system?",
+        "content": "It provides a secure payment and contract infrastructure for freelance work. It offers a transparent and automated process between parties."
+      },
+      "card6": {
+        "title": "What is the total supply of Solvex tokens?",
+        "content": "The total supply is 100 million tokens. 50% of this has been permanently burned. The remaining portion is allocated to various areas."
+      },
+      "card7": {
+        "title": "What is on the roadmap for the Solvex platform?",
+        "content": "The roadmap includes wallet developments, multi-network support, fiat integration, and the business/career network platform."
+      },
+      "card9": {
+        "title": "Has part of the token supply been burned?",
+        "content": "Yes, 50% of the total supply has been permanently burned."
       }
     }
   },
   "ContactPage": {
+    "h1": "Contact Us",
+    "h2": "Get in Touch with Us",
     "title": "Contact",
-    "subtitle": "Contact us, we’d love to meet you.",
-    "text": "In the infinite universe, every discovery brings a new perspective. Let’s push the boundaries together through collaboration and shape the future.",
+    "subtitle": "We would be happy to answer your questions and explore collaboration opportunities.",
     "form": {
       "title": "Let's Strengthen Our Connections",
       "subtitle": "We would be happy to answer your questions and explore collaboration opportunities.",

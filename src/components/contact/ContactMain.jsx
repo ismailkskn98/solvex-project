@@ -8,21 +8,20 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import contactImage from "@/../public/images/contact-image.webp";
+import { useTranslations } from "next-intl";
 
 export default function ContactMain() {
+  const t = useTranslations("ContactPage");
   return (
     <main className="">
-      <PageTitle title={"İletişim"} />
+      <PageTitle title={t("h1")} />
       <section className="mx-auto mt-20 mb-20 flex w-full max-w-full flex-col items-start gap-6 rounded-lg border border-white/10 bg-black px-4 py-8 md:px-8 lg:flex-row xl:max-w-11/12 2xl:max-w-9/12">
         <article className="flex flex-col items-start gap-8">
           <div className="flex flex-col items-start gap-2">
-            <h2 className="text-3xl font-medium text-white">
-              Bizimle İletişime Geç
+            <h2 id="contact_form" className="text-3xl font-medium text-white">
+              {t("h2")}
             </h2>
-            <p className="text-sm text-white/80">
-              Sorularınızı yanıtlamaktan ve iş birliği fırsatlarını
-              değerlendirmekten memnuniyet duyarız.
-            </p>
+            <p className="text-sm text-white/80">{t("subtitle")}</p>
           </div>
           <ContactForm />
         </article>

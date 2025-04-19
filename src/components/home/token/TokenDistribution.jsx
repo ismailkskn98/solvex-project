@@ -1,12 +1,14 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, use } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function TokenDistribution({ tokenAllocations }) {
+  const t = useTranslations("HomePage");
   const [hoverIndex, setHoverIndex] = useState(null);
   const chartRef = useRef();
 
@@ -53,7 +55,7 @@ export default function TokenDistribution({ tokenAllocations }) {
       <main className="order-1 flex w-full flex-col items-center gap-6 md:w-1/2 lg:order-2">
         <article className="flex flex-col items-center gap-2">
           <p className="text-2xl font-medium text-white capitalize">
-            100.000.000 Toplam Arz
+            100.000.000 {t("tokenTotal")}
           </p>
         </article>
         <div className="grid w-full grid-cols-1 gap-4 xl:grid-cols-2">

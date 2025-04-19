@@ -22,7 +22,7 @@ export default function ColdWalletContent({ data }) {
     }
   }, [timer]);
   return (
-    <div className="mx-auto grid w-full grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 xl:w-11/12 xl:gap-12 2xl:gap-16">
+    <div className="mx-auto grid w-full grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 xl:w-11/12 xl:gap-12 2xl:w-10/12 2xl:gap-16">
       <div className="space-y-3">
         {data.map((item, index) => (
           <button
@@ -47,7 +47,7 @@ export default function ColdWalletContent({ data }) {
       <div className="hidden h-full md:block">
         <div
           className={cn(
-            "relative h-96 w-full overflow-hidden rounded-lg drop-shadow-[0_0_10px_#2f2f4e] md:h-[400px]",
+            "relative h-96 w-full overflow-hidden rounded-[12px] drop-shadow-[0_0_10px_#2f2f4e] md:h-[400px]",
           )}
         >
           {data.map((item, index) => (
@@ -56,7 +56,7 @@ export default function ColdWalletContent({ data }) {
               width={900}
               height={500}
               className={cn(
-                "absolute h-[500px] w-full transform-gpu rounded-lg object-contain transition-all duration-300",
+                "absolute h-[500px] w-full transform-gpu rounded-[12px] object-contain transition-all duration-300",
                 featureOpen === index ? "scale-100" : "scale-70",
                 featureOpen > index ? "translate-y-full" : "",
               )}

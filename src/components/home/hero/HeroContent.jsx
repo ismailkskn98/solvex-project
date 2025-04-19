@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -13,12 +14,20 @@ export default function HeroContent() {
         {t("heroSubContent")}
       </p>
       <div className="mt-2 flex items-center gap-4 font-medium capitalize">
-        <button className="cursor-pointer rounded-full border-2 border-white/20 bg-white/15 px-5 py-3 text-white transition hover:bg-white/30">
-          Get Started
-        </button>
-        <button className="cursor-pointer rounded-full bg-white px-5 py-3 text-black/80 transition hover:bg-white/70">
-          Satın Al
-        </button>
+        <Link
+          href="https://skynet.certik.com/projects/solvex-network"
+          target="_black"
+          rel="noopener noreferrer"
+          className="cursor-pointer rounded-full border-2 border-white/20 bg-white/15 px-5 py-3 text-nowrap text-white capitalize transition hover:bg-white/30"
+        >
+          {t("auditReports")}
+        </Link>
+        <Link
+          href="/contact"
+          className="cursor-pointer rounded-full bg-white px-5 py-3 text-black/80 capitalize transition hover:bg-white/70"
+        >
+          {t("navbar.contact")}
+        </Link>
       </div>
     </article>
   );

@@ -23,6 +23,18 @@ export default function Footer() {
     { href: "/faq", title: t("navbar.faq") },
     { href: "/contact", title: t("navbar.contact") },
   ];
+  const quickAccessItems = [
+    {
+      href: "/products#products",
+      title: t("footer.quickAccessItems.products"),
+    },
+    { href: "/about#we_offer", title: t("footer.quickAccessItems.weOffer") },
+    {
+      href: "/contact#contact_form",
+      title: t("footer.quickAccessItems.contact"),
+    },
+    { href: "/faq", title: t("footer.quickAccessItems.faq") },
+  ];
 
   return (
     <footer className="fluid gridContainer relative overflow-hidden">
@@ -70,9 +82,7 @@ export default function Footer() {
             </div>
           </article>
           <article className="flex flex-col items-start gap-5 text-nowrap">
-            <h3 className="font-medium text-white">
-              {t("footer.quickAccess")}
-            </h3>
+            <h3 className="font-medium text-white">{t("footer.siteMap")}</h3>
             <div className="flex flex-col items-start gap-3 text-white/65">
               {navItem.map((item, i) => (
                 <Link
@@ -86,9 +96,12 @@ export default function Footer() {
             </div>
           </article>
           <article className="flex flex-col items-start gap-5 text-nowrap">
-            <h3 className="font-medium text-white">{t("footer.siteMap")}</h3>
+            <h3 className="font-medium text-white">
+              {t("footer.quickAccess")}
+            </h3>
+
             <div className="flex flex-col items-start gap-3 text-white/70">
-              {navItem.map((item, i) => (
+              {quickAccessItems.map((item, i) => (
                 <Link href={item.href} key={i} className="">
                   {item.title}
                 </Link>

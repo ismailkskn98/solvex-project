@@ -1,4 +1,4 @@
-import ProductsContent from "@/components/common/products/ProductsContent";
+import ProductsContent from "@/components/products/ProductsContent";
 import React from "react";
 
 export default function Products() {

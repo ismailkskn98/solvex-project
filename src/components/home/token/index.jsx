@@ -1,41 +1,43 @@
 import React from "react";
 import TokenDistribution from "./TokenDistribution";
+import { useTranslations } from "next-intl";
 
 export default function Token() {
+  const t = useTranslations("HomePage");
   const tokenAllocations = [
     {
-      name: "Marketing",
+      name: t("tokenAllocations.marketing.title"),
       percentage: 7,
       amount: 7000000,
-      description: "Marketing and promotional activities",
+      description: t("tokenAllocations.marketing.content"),
       color: "#d9b6ff",
     },
     {
-      name: "Development",
+      name: t("tokenAllocations.development.title"),
       percentage: 2,
       amount: 2000000,
-      description: "Development fund",
+      description: t("tokenAllocations.development.title"),
       color: "#6d18ff",
     },
     {
-      name: "Liquidity",
+      name: t("tokenAllocations.liquidity.title"),
       percentage: 2,
       amount: 2000000,
-      description: "PancakeSwap liquidity pool",
+      description: t("tokenAllocations.liquidity.title"),
       color: "#05031f",
     },
     {
-      name: "Burned Tokens",
+      name: t("tokenAllocations.burnedTokens.title"),
       percentage: 50,
       amount: 50000000,
-      description: "Permanently burned tokens",
+      description: t("tokenAllocations.burnedTokens.title"),
       color: "#43256e",
     },
     {
-      name: "Community & Market Circulation",
+      name: t("tokenAllocations.communit.title"),
       percentage: 39,
       amount: 39000000,
-      description: "Tokens in circulation",
+      description: t("tokenAllocations.communit.title"),
       color: "#ffffff",
     },
   ];
@@ -44,11 +46,10 @@ export default function Token() {
       <section className="flex flex-col items-center justify-center gap-9 sm:gap-12 md:gap-16">
         <article className="w-full flex-col items-center justify-center bg-gradient-to-t from-black to-white bg-clip-text text-center text-transparent">
           <h2 className="text-[min(7vw,50px)] font-semibold capitalize">
-            sasafsas
+            {t("tokenTitle")}
           </h2>
           <p className="font-base text-[clamp(14px,1.5vw,18px)] leading-7 text-white/70 sm:leading-8 lg:leading-9">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
-            quibusdam?
+            {t("tokenSubtitle")}
           </p>
         </article>
 

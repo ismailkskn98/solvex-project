@@ -6,6 +6,32 @@
     "whySolvexReply": "Solvex Network, BNB Chain Ecosystem üzerinde yer alan, merkeziyetsiz ve topluluk odaklı bir kripto para projesidir. İlk aşamalarında merkeziyetsiz finans (DeFi) çözümlerine odaklanan proje, daha sonra topluluk tarafından yönetilen bir modele geçiş yaparak, dolaşımdaki token miktarının yakılması ve likiditenin kilitlenmesi gibi önlemlerle uzun vadeli istikrar sağlamayı amaçlamıştır. Bu yapı, projenin güvenilirliğini artırarak yatırımcıların ve kullanıcıların güvenini kazanmayı hedeflemektedir.",
     "services": "Servisler",
     "servicesSubtitle": "Bu teknik özellikler sayesinde Solvex, yalnızca bir token değil; kullanıcı verilerini ve işlemlerini koruyan kapsamlı bir ekosistem sunar.",
+    "auditReports": "Denetim Raporları",
+    "tokenTitle": "Token Dağıtım",
+    "tokenTotal": "Toplam Arz",
+    "tokenAllocations": {
+      "marketing": {
+        "title": "Pazarlama",
+        "content": "Pazarlama ve tanıtım faaliyetleri"
+      },
+      "development": {
+        "title": "Geliştirme",
+        "content": "Proje geliştirme ve araştırma faaliyetleri"
+      },
+      "liquidity": {
+        "title": "Likidite",
+        "content": "PancakeSwap likidite havuzu"
+      },
+      "burnedTokens": {
+        "title": "Yakılan Tokenler",
+        "content": "Kalıcı olarak yakılan tokenlar."
+      },
+      "communit": {
+        "title": "Topluluk ve Pazar Dolaşımı",
+        "content": "Dolaşımdaki tokenlar."
+      }
+    },
+    "tokenSubtitle": "Token arzının büyük bir bölümü yakılırken, kalan kısmın pazarlama, geliştirme, likidite ve dolaşımdaki kullanım alanlarına göre dengeli bir şekilde paylaştırıldığı yapıyı inceleyin.",
     "servicesItem": {
       "system": {
         "title": "Kurumsal Doğrulama Sistemi",
@@ -32,7 +58,25 @@
         "content": "Yakım adresini görüntüler. Detaylı raporu incelemek için lütfen <a>BscScan</a> adresini ziyaret edin."
       }
     },
-    "coldWalletSubtitle": "Kripto varlıklarınızı maksimum güvenlikle saklamanın en etkili yolu: çevrimdışı, saldırılara kapalı ve tamamen sizin kontrolünüzde.",
+    "solvexWalletSubtitle": "Web3 dünyasında kripto varlıklarınızı güvenle yönetmenin en akıllı yolu: gelişmiş güvenlik, tam gizlilik ve anahtarlar tamamen sizin kontrolünüzde.",
+    "solvexWalletData": {
+      "whySolvex": {
+        "title": "Solvex Wallet Nedir?",
+        "content": "Solvex Wallet, üst düzey güvenlik önlemleriyle korunan, Web3 tabanlı merkeziyetsiz bir cüzdandır. Kullanıcılarına, özel anahtarların tamamen kendi kontrollerinde olduğu güvenli ve kullanıcı dostu bir deneyim sunar."
+      },
+      "security": {
+        "title": "Tam Özgürlük ve Gizlilik",
+        "content": "Solvex Wallet, blockchain dünyasında tam özgürlük ve gizlilik sağlamak üzere tasarlanmıştır. Her işlemde kullanıcı mahremiyetini ön planda tutar, verilerinizi veya anahtarlarınızı asla üçüncü taraflarla paylaşmaz."
+      },
+      "Web3": {
+        "title": "Web3 Ekosistemiyle Entegre",
+        "content": "Solvex Wallet ile tokenlarınızı güvenle saklayabilir, transfer edebilir ve Web3 dünyasındaki dApps’lere kolayca erişebilirsiniz. Dilerseniz favori protokollerinize tek dokunuşla bağlanabilirsiniz."
+      },
+      "safe": {
+        "title": "Güvenlik Her Şeyden Önce Gelir",
+        "content": "Solvex Wallet, kullanıcı fonlarını korumak için gelişmiş şifreleme, çok faktörlü kimlik doğrulama ve donanımsal güvenlik önlemleriyle donatılmıştır. Güvenlikte ödün vermez."
+      }
+    },
     "navbar": {
       "home": "Anasayfa",
       "about": "Hakkımızda",
@@ -47,57 +91,101 @@
       "siteMap": "Site Haritası",
       "contactTitle": "Bize Ulaşın",
       "contactSubtitle": "Ekibimiz, her zaman sorularınızı yanıtlamaya hazır. Bizimle iletişime geçin!",
-      "copyright": "Solvex Network © Tüm Hakları Saklıdır."
+      "copyright": "Solvex Network © Tüm Hakları Saklıdır.",
+      "quickAccessItems": {
+        "weOffer": "Ne Sunuyoruz?",
+        "products": "Ürünlerimiz",
+        "faq": "Solvex Nedir?",
+        "contact": "İletişim Formu"
+      }
     }
   },
-  "RoadMapPage": {
-    "q1_2025": {
-      "title": "2025 1/4",
-      "content": {
-        "1": "Temel güvenlik altyapısının ve temel cüzdan işlevlerinin geliştirilmesi",
-        "2": "Çoklu zincir desteği entegrasyonu için araştırma ve planlama"
+  "AboutPage": {
+    "h1": "Hakkımızda",
+    "h2": "Solvex Network Neyi Amaçlıyor?",
+    "subtitle": "SolvexNetwork, blockchain teknolojisinin karmaşasını ortadan kaldıran yenilikçi ürünler sunarak, toplumu teknik bilgiye ihtiyaç duymadan bu alandan faydalanabilir hale getirmeyi amaçlar. Geliştirdiğimiz çözümler ile kullanıcı dostu deneyimler ve yüksek güvenlik standartlarını bir araya getiriyor; bireylerin, kurumların ve geliştiricilerin blockchain ekosistemine kolayca entegre olmasını sağlıyoruz.",
+    "subtitle2": "Güvenli, şeffaf ve erişilebilir bir dijital ekonomi inşa etmek için çalışıyoruz. Herkesin blockchain avantajlarından yararlanabilmesini hedefleyen bir vizyonla ilerliyoruz.",
+    "cards": {
+      "title": "Ne Sunuyoruz?",
+      "verify": {
+        "title": "Kurumsal Doğrulama Sistemi",
+        "content": "İş ve kariyer ağına entegre edilmiş, onaylı kurumlar aracılığıyla gerçekleştirilen profil doğrulama sistemi."
+      },
+      "secure": {
+        "title": "Güvenli ve Kullanıcı Dostu Cüzdan",
+        "content": "Sıfır teknik bilgi gerektiren, çoklu ağ desteği sunan kullanıcı dostu cüzdan."
+      },
+      "onRamp": {
+        "title": "On/Off-Ramp Platformu",
+        "content": "Solvex tokenlerini TL'ye ve TL'yi Solvex jetonlarına dönüştürebileceğiniz entegre bir finansal sistem."
+      },
+      "smart": {
+        "title": "Akıllı Kontrat Sistemi",
+        "content": "Freelance işler için blockchain tabanlı ödeme ve akıllı kontrat altyapısı."
       }
-    },
-    "q2_2025": {
-      "title": "2025 2/4",
-      "content": {
-        "1": "Temel token yönetimi ve güvenlik özelliklerine sahip alpha sürümünün başlatılması",
-        "2": "Önde gelen blokzincir ağları için destek entegrasyonu"
+    }
+  },
+  "ProductPage": {
+    "h1": "Ürünler",
+    "subtitle": "Blockchain teknolojisini herkes için erişilebilir kılan çözümlerimiz",
+    "productCards": {
+      "card1": {
+        "title": "Dijital Kart",
+        "content": "QR kod ve dijital bağlantılar sayesinde hızlı, etkili ve modern bir iletişim kurun."
+      },
+      "card2": {
+        "title": "Otomatik Al-Sat Botu",
+        "content": "Belirlediğiniz stratejilere göre 7/24 çalışan otomatik kripto alım-satım botu."
+      },
+      "card3": {
+        "title": "Cüzdan",
+        "content": "Çoklu ağ desteği ile güvenli, kolay kullanılabilir, sıfır teknik bilgi gerektiren cüzdan sistemi."
       }
-    },
-    "q3_2025": {
-      "title": "2025 3/4",
-      "content": {
-        "1": "Genişletilmiş özelliklerle kapsamlı güvenlik denetimleri ve beta testleri",
-        "2": "Fiat entegrasyonu için piyasa araştırması ve düzenleyici uygunluk analizi"
-      }
-    },
-    "q4_2025": {
-      "title": "2025 4/4",
-      "content": {
-        "1": "Tüm özellikler ve güvenlik önlemleriyle cüzdanın tam sürümünün yayınlanması",
-        "2": "Ödeme altyapısının geliştirilmesi ve banka ortaklıklarının başlatılması"
-      }
-    },
-    "q1_2026": {
-      "title": "2026 1/4",
-      "content": {
-        "1": "Seçilen kullanıcılarla fiat'tan kriptoya dönüşüm sisteminin ilk testleri",
-        "2": "İş ve kariyer ağı için tasarım ve mimari planlama"
-      }
-    },
-    "q2_2026": {
-      "title": "2026 2/4",
-      "content": {
-        "1": "Tam bankacılık entegrasyonuyla fiat geçidinin resmi lansmanı",
-        "2": "İş ve kariyer ağı platformunun geliştirilmesine başlanması"
+    }
+  },
+  "FaqPage": {
+    "h1": "Sık Sorulan Sorular",
+    "h2": "Solvex ile ilgili sıkça sorulan sorular",
+    "faqCards": {
+      "card1": {
+        "title": "Solvex Wallet nedir?",
+        "content": "Solvex Wallet, teknik bilgi gerektirmeden farklı blokzincir ağlarını destekleyen kullanıcı dostu bir cüzdandır."
+      },
+      "card2": {
+        "title": "Cüzdanı kullanmak için teknik bilgiye ihtiyacım var mı?",
+        "content": "Hayır, Solvex Wallet herkesin kolayca kullanabileceği şekilde tasarlanmıştır. Teknik bilgi gerekmeden işlem yapabilirsiniz."
+      },
+      "card3": {
+        "title": "Solvex Token'ı Türk Lirasına çevirebilir miyim?",
+        "content": "Evet. Geliştirilen On/Off-Ramp platformu sayesinde Solvex tokenlarını Türk Lirasına çevirebilir, TL ile token satın alabilirsiniz."
+      },
+      "card4": {
+        "title": "Solvex Network doğrulama sistemi nasıl çalışır?",
+        "content": "Kurumsal Doğrulama Sistemi, iş ve kariyer ağına bağlı onaylı kurumlar aracılığıyla kullanıcı profillerinin doğrulanmasını sağlar."
+      },
+      "card5": {
+        "title": "Akıllı kontrat sistemi ne amaçla kullanılıyor?",
+        "content": "Freelance işler için güvenli ödeme ve sözleşme altyapısı sağlar. Taraflar arasında şeffaf ve otomatik bir süreç sunar."
+      },
+      "card6": {
+        "title": "Toplam Solvex token arzı nedir?",
+        "content": "Toplam arz 100 milyon adettir. Bunun %50’si kalıcı olarak yakılmıştır. Geri kalan kısmı çeşitli alanlara ayrılmıştır."
+      },
+      "card7": {
+        "title": "Solvex platformunun yol haritasında neler var?",
+        "content": "Yol haritasında cüzdan geliştirmeleri, çoklu ağ desteği, fiat entegrasyonu ve iş/kariyer ağı platformu gibi adımlar yer alıyor."
+      },
+      "card9": {
+        "title": "Token arzının bir kısmı yakıldı mı?",
+        "content": "Evet, toplam arzın %50'si kalıcı olarak yakılmıştır."
       }
     }
   },
   "ContactPage": {
+    "h1": "İletişim",
+    "h2": "Bizimle İletişime Geçin",
     "title": "İletişim",
-    "subtitle": "Bize ulaşın, sizinle tanışmak isteriz.",
-    "text": "Sonsuz evrende her keşif, yeni bir bakış açısı kazandırır. İş birliğiyle sınırları aşalım ve geleceğinizi birlikte şekillendirelim.",
+    "subtitle": "Sorularınızı yanıtlamaktan ve iş birliği fırsatlarını değerlendirmekten memnuniyet duyarız.",
     "form": {
       "title": "Bağlantılarımızı Güçlendirelim",
       "subtitle": "Sorularınızı yanıtlamaktan ve iş birliği fırsatlarını değerlendirmekten memnuniyet duyarız.",
