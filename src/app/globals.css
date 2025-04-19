@@ -16,6 +16,10 @@
   grid-column: 1 / -1;
 }
 
+canvas {
+  will-change: transform;
+}
+
 @theme {
   /* color */
   --color-lavender-light: #d9b6ff;
